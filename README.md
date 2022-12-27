@@ -1,4 +1,5 @@
-Calculadora Avançada feita para por conhecimentos de HTML, CSS e JavaScript em prática.
+Calculadora Avançada desenvolvida para por conhecimentos de HTML, CSS e JavaScript em prática.
+Feita com o proposito de ser visualmente simples, intuitivo e rápido.
 
 ----------------------------------------------------------------------
 
