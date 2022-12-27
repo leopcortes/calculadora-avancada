@@ -1,6 +1,6 @@
 Calculadora Avançada feita para por conhecimentos de HTML, CSS e JavaScript em prática.
 
-=======================================================================================
+======================================================================
 
 Contém alguns tipos de calculadora, como:
 1. Calculadora básica feita em design de dispositivos móveis (mais especificamente o iPhone XR);
