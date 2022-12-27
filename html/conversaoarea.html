@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Conversão de Área | LPC </title>
+    <!-- ========== CSS ========== -->  
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <div class="conversao areaarea">
+        <div class="titulo">
+            <p class="nomedaconversao">
+                <svg class="svgarea2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#FFFFFF" d="M21,2H3A1,1,0,0,0,2,3V21a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V3A1,1,0,0,0,21,2ZM20,20H4V4H20Z"/></svg>
+                Área
+            </p>
+            <button type="submit" class="botaoconverter" onclick="converterArea()" data-upgraded=",MaterialButton">calcular</button>
+
+        </div>
+
+        <div class="areadaconversao">
+            <input class="conversor" type="text" id="conversorArea" required></input>
+            <p class="igual">=</p>
+            <p class="convertido" type="text" id="convertidoArea"></p>
+        </div>
+
+        <div class="areadeselecao">
+            <select name="unidadearea" id="selecaoconversorarea" class="selecaoconversor">
+                <option>Quilômetro quadrado</option>
+                <option>Metro quadrado</option>
+                <option>Milha quadrada</option>
+                <option>Pé quadrado</option>
+                <option>Polegada quadrada</option>
+                <option>Hectare</option>
+                <option>Acre</option>
+            </select>
+
+            <p class="espaco">=</p>
+
+            <select name="unidadearea" id="selecaoconvertidoarea" class="selecaoconvertido">
+                <option>Quilômetro quadrado</option>
+                <option>Metro quadrado</option>
+                <option>Milha quadrada</option>
+                <option>Pé quadrado</option>
+                <option>Polegada quadrada</option>
+                <option>Hectare</option>
+                <option>Acre</option>
+            </select>
+        </div>
+
+        <div class="textoformula">
+            <p class="cabecalho">Fórmula:</p>
+            <div class="tabelaformula">
+                <div class="unidadestabela"> <!-- Coluna Unidade -->
+                    <p class="unidades">Quilômetro quadrado (km²)</p>
+                    <p class="unidades">Metro quadrado (m²)</p>
+                    <p class="unidades">Milha quadrada (mi²)</p>
+                    <p class="unidades">Pé quadrado (ft²)</p>
+                    <p class="unidades">Polegada quadrada (pol²)</p>
+                    <p class="unidades">Hectare (ha)</p>
+                    <p class="unidades">Acre (a)</p>
+                </div>
+
+                <div class="valorestabela"> <!-- Coluna Valor -->
+                    <p class="valores">1000000 m²</p>
+                    <p class="valores">1/1000000 km²</p>
+                    <p class="valores">2.59 km²</p>
+                    <p class="valores">144 pol²</p>
+                    <p class="valores">1/144 ft²</p>
+                    <p class="valores">10000 m²</p>
+                    <p class="valores">4047 m²</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- ========== JavaScript ========== -->
+    <script src="../js/conversao.js"></script>
+
+</body>
+
+</html>

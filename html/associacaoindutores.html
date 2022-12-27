@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora Associação de Indutores | LPC </title>
+    <!-- ========== CSS ========== -->  
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <div class="calcAssociacao areaindutores">
+        <div class="associacaoserie">
+            <div class="associacaoserietopo">
+                <div class="tituloassociacao serie">Calculadora Associação de Indutores em Série</div>
+
+                <div class="areaimagemserie">
+                    <img src="../assets/indutoresserie.jpg" class="imagemserie">
+                </div>
+                
+                <div class="formulaassociacao">\(L_{eq} = L_1 + L_2 + L_3 + ... + L_N\)</div>
+            </div>
+
+            <div class="areadaassociacao">
+                <div class="linha">
+                    <div class="nomeindutor">
+                        <p>L1<span>0</span></p>
+                    </div>
+    
+                    <div class="inputindutores">
+                        <input class="inputindutoresserie" type="text" id="inputIndutorSerie1" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesindutores">
+                        <select name="unidadesindutores" id="unidadesIndutoresSerie1" class="selecaounidadesindutores">
+                            <option>H (Henry)</option>
+                            <option>mH (milihenry)</option>
+                            <option>µH (microhenry)</option>
+                            <option>nH (nanohenry)</option>
+                            <option>pH (picohenry)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeindutor">
+                        <p>L2<span>0</span></p>
+                    </div>
+    
+                    <div class="inputindutores">
+                        <input class="inputindutoresserie" type="text" id="inputIndutorSerie2" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesindutores">
+                        <select name="unidadesindutores" id="unidadesIndutoresSerie2" class="selecaounidadesindutores">
+                            <option>H (Henry)</option>
+                            <option>mH (milihenry)</option>
+                            <option>µH (microhenry)</option>
+                            <option>nH (nanohenry)</option>
+                            <option>pH (picohenry)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeindutor">
+                        <p>L3<span>0</span></p>
+                    </div>
+    
+                    <div class="inputindutores">
+                        <input class="inputindutoresserie" type="text" id="inputIndutorSerie3" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesindutores">
+                        <select name="unidadesindutores" id="unidadesIndutoresSerie3" class="selecaounidadesindutores">
+                            <option>H (Henry)</option>
+                            <option>mH (milihenry)</option>
+                            <option>µH (microhenry)</option>
+                            <option>nH (nanohenry)</option>
+                            <option>pH (picohenry)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeindutor">
+                        <p>L4<span>0</span></p>
+                    </div>
+    
+                    <div class="inputindutores">
+                        <input class="inputindutoresserie" type="text" id="inputIndutorSerie4" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesindutores">
+                        <select name="unidadesindutores" id="unidadesIndutoresSerie4" class="selecaounidadesindutores">
+                            <option>H (Henry)</option>
+                            <option>mH (milihenry)</option>
+                            <option>µH (microhenry)</option>
+                            <option>nH (nanohenry)</option>
+                            <option>pH (picohenry)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeindutor">
+                        <p>L5<span>0</span></p>
+                    </div>
+    
+                    <div class="inputindutores">
+                        <input class="inputindutoresserie" type="text" id="inputIndutorSerie5" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesindutores">
+                        <select name="unidadesindutores" id="unidadesIndutoresSerie5" class="selecaounidadesindutores">
+                            <option>H (Henry)</option>
+                            <option>mH (milihenry)</option>
+                            <option>µH (microhenry)</option>
+                            <option>nH (nanohenry)</option>
+                            <option>pH (picohenry)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeindutor">
+                        <p>L6<span>0</span></p>
+                    </div>
+    
+                    <div class="inputindutores">
+                        <input class="inputindutoresserie" type="text" id="inputIndutorSerie6" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesindutores">
+                        <select name="unidadesindutores" id="unidadesIndutoresSerie6" class="selecaounidadesindutores">
+                            <option>H (Henry)</option>
+                            <option>mH (milihenry)</option>
+                            <option>µH (microhenry)</option>
+                            <option>nH (nanohenry)</option>
+                            <option>pH (picohenry)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeindutor">
+                        <p>L7<span>0</span></p>
+                    </div>
+    
+                    <div class="inputindutores">
+                        <input class="inputindutoresserie" type="text" id="inputIndutorSerie7" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesindutores">
+                        <select name="unidadesindutores" id="unidadesIndutoresSerie7" class="selecaounidadesindutores">
+                            <option>H (Henry)</option>
+                            <option>mH (milihenry)</option>
+                            <option>µH (microhenry)</option>
+                            <option>nH (nanohenry)</option>
+                            <option>pH (picohenry)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeindutor">
+                        <p>L8<span>0</span></p>
+                    </div>
+    
+                    <div class="inputindutores">
+                        <input class="inputindutoresserie" type="text" id="inputIndutorSerie8" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesindutores">
+                        <select name="unidadesindutores" id="unidadesIndutoresSerie8" class="selecaounidadesindutores">
+                            <option>H (Henry)</option>
+                            <option>mH (milihenry)</option>
+                            <option>µH (microhenry)</option>
+                            <option>nH (nanohenry)</option>
+                            <option>pH (picohenry)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeindutor">
+                        <p>L9<span>0</span></p>
+                    </div>
+    
+                    <div class="inputindutores">
+                        <input class="inputindutoresserie" type="text" id="inputIndutorSerie9" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesindutores">
+                        <select name="unidadesindutores" id="unidadesIndutoresSerie9" class="selecaounidadesindutores">
+                            <option>H (Henry)</option>
+                            <option>mH (milihenry)</option>
+                            <option>µH (microhenry)</option>
+                            <option>nH (nanohenry)</option>
+                            <option>pH (picohenry)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeindutor">
+                        <p>L10</p>
+                    </div>
+    
+                    <div class="inputindutores">
+                        <input class="inputindutoresserie" type="text" id="inputIndutorSerie10" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesindutores">
+                        <select name="unidadesindutores" id="unidadesindutores" class="selecaounidadesindutores">
+                            <option>H (Henry)</option>
+                            <option>mH (milihenry)</option>
+                            <option>µH (microhenry)</option>
+                            <option>nH (nanohenry)</option>
+                            <option>pH (picohenry)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button type="submit" class="botaoassociar" onclick="associarIndutoresSerie()" data-upgraded=",MaterialButton">calcular</button>
+                
+                <p class="indutanciaequivalente" type="text" id="indutanciaEquivalenteSerie">Indutância Equivalente = 0 H</p>
+            </div>
+
+        </div>
+        
+        <div class="associacaoparalelo">
+            <div class="associacaoparalelotopo">
+                <div class="tituloassociacao paralelo">Calculadora Associação de Indutores em Paralelo</div>
+                
+                <div class="areaimagemparalelo">
+                    <img src="../assets/indutoresparalelo.jpg" class="imagemparalelo">
+                </div>
+                
+                <div class="formulaassociacao">\(L_{eq} = \frac{1}{\frac{1}{L_1} + \frac{1}{L_2} + \frac{1}{L_3} + ... + \frac{1}{L_N}}\)</div>
+            </div>
+
+            <div class="areadaassociacao">
+                <div class="linha">
+                    <div class="nomeindutor">
+                        <p>L1<span>0</span></p>
+                    </div>
+    
+                    <div class="inputindutores">
+                        <input class="inputindutoresparalelo" type="text" id="inputIndutorParalelo1" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesindutores">
+                        <select name="unidadesindutores" id="unidadesIndutoresParalelo1" class="selecaounidadesindutores">
+                            <option>H (Henry)</option>
+                            <option>mH (milihenry)</option>
+                            <option>µH (microhenry)</option>
+                            <option>nH (nanohenry)</option>
+                            <option>pH (picohenry)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeindutor">
+                        <p>L2<span>0</span></p>
+                    </div>
+    
+                    <div class="inputindutores">
+                        <input class="inputindutoresparalelo" type="text" id="inputIndutorParalelo2" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesindutores">
+                        <select name="unidadesindutores" id="unidadesIndutoresParalelo2" class="selecaounidadesindutores">
+                            <option>H (Henry)</option>
+                            <option>mH (milihenry)</option>
+                            <option>µH (microhenry)</option>
+                            <option>nH (nanohenry)</option>
+                            <option>pH (picohenry)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeindutor">
+                        <p>L3<span>0</span></p>
+                    </div>
+    
+                    <div class="inputindutores">
+                        <input class="inputindutoresparalelo" type="text" id="inputIndutorParalelo3" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesindutores">
+                        <select name="unidadesindutores" id="unidadesIndutoresParalelo3" class="selecaounidadesindutores">
+                            <option>H (Henry)</option>
+                            <option>mH (milihenry)</option>
+                            <option>µH (microhenry)</option>
+                            <option>nH (nanohenry)</option>
+                            <option>pH (picohenry)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeindutor">
+                        <p>L4<span>0</span></p>
+                    </div>
+    
+                    <div class="inputindutores">
+                        <input class="inputindutoresparalelo" type="text" id="inputIndutorParalelo4" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesindutores">
+                        <select name="unidadesindutores" id="unidadesIndutoresParalelo4" class="selecaounidadesindutores">
+                            <option>H (Henry)</option>
+                            <option>mH (milihenry)</option>
+                            <option>µH (microhenry)</option>
+                            <option>nH (nanohenry)</option>
+                            <option>pH (picohenry)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeindutor">
+                        <p>L5<span>0</span></p>
+                    </div>
+    
+                    <div class="inputindutores">
+                        <input class="inputindutoresparalelo" type="text" id="inputIndutorParalelo5" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesindutores">
+                        <select name="unidadesindutores" id="unidadesIndutoresParalelo5" class="selecaounidadesindutores">
+                            <option>H (Henry)</option>
+                            <option>mH (milihenry)</option>
+                            <option>µH (microhenry)</option>
+                            <option>nH (nanohenry)</option>
+                            <option>pH (picohenry)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeindutor">
+                        <p>L6<span>0</span></p>
+                    </div>
+    
+                    <div class="inputindutores">
+                        <input class="inputindutoresparalelo" type="text" id="inputIndutorParalelo6" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesindutores">
+                        <select name="unidadesindutores" id="unidadesIndutoresParalelo6" class="selecaounidadesindutores">
+                            <option>H (Henry)</option>
+                            <option>mH (milihenry)</option>
+                            <option>µH (microhenry)</option>
+                            <option>nH (nanohenry)</option>
+                            <option>pH (picohenry)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeindutor">
+                        <p>L7<span>0</span></p>
+                    </div>
+    
+                    <div class="inputindutores">
+                        <input class="inputindutoresparalelo" type="text" id="inputIndutorParalelo7" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesindutores">
+                        <select name="unidadesindutores" id="unidadesIndutoresParalelo7" class="selecaounidadesindutores">
+                            <option>H (Henry)</option>
+                            <option>mH (milihenry)</option>
+                            <option>µH (microhenry)</option>
+                            <option>nH (nanohenry)</option>
+                            <option>pH (picohenry)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeindutor">
+                        <p>L8<span>0</span></p>
+                    </div>
+    
+                    <div class="inputindutores">
+                        <input class="inputindutoresparalelo" type="text" id="inputIndutorParalelo8" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesindutores">
+                        <select name="unidadesindutores" id="unidadesIndutoresParalelo8" class="selecaounidadesindutores">
+                            <option>H (Henry)</option>
+                            <option>mH (milihenry)</option>
+                            <option>µH (microhenry)</option>
+                            <option>nH (nanohenry)</option>
+                            <option>pH (picohenry)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeindutor">
+                        <p>L9<span>0</span></p>
+                    </div>
+    
+                    <div class="inputindutores">
+                        <input class="inputindutoresparalelo" type="text" id="inputIndutorParalelo9" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesindutores">
+                        <select name="unidadesindutores" id="unidadesIndutoresParalelo9" class="selecaounidadesindutores">
+                            <option>H (Henry)</option>
+                            <option>mH (milihenry)</option>
+                            <option>µH (microhenry)</option>
+                            <option>nH (nanohenry)</option>
+                            <option>pH (picohenry)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeindutor">
+                        <p>L10</p>
+                    </div>
+    
+                    <div class="inputindutores">
+                        <input class="inputindutoresparalelo" type="text" id="inputIndutorParalelo10" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesindutores">
+                        <select name="unidadesindutores" id="unidadesindutores" class="selecaounidadesindutores">
+                            <option>H (Henry)</option>
+                            <option>mH (milihenry)</option>
+                            <option>µH (microhenry)</option>
+                            <option>nH (nanohenry)</option>
+                            <option>pH (picohenry)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button type="submit" class="botaoassociar" onclick="associarIndutoresParalelo()" data-upgraded=",MaterialButton">calcular</button>
+                
+                <p class="indutanciaequivalente" type="text" id="indutanciaEquivalenteParalelo">Indutância Equivalente = 0 H</p>
+            </div>
+
+        </div>
+    </div>
+   
+    <!-- ========== JavaScript ========== -->
+    <script src="../js/associacao.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+
+</html>

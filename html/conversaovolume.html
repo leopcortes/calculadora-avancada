@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Conversão de Volume | LPC </title>
+    <!-- ========== CSS ========== -->  
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <div class="conversao areavolume">
+        <div class="titulo">
+            <p class="nomedaconversao">
+                <svg class="svgvolume2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#FFFFFF" d="M20.47,7.37s0,0,0-.08l-.06-.15a.71.71,0,0,0-.07-.09.94.94,0,0,0-.09-.12l-.09-.07L20,6.78l-7.5-4.63a1,1,0,0,0-1.06,0L4,6.78l-.09.08-.09.07a.94.94,0,0,0-.09.12.71.71,0,0,0-.07.09l-.06.15s0,0,0,.08a1.15,1.15,0,0,0,0,.26v8.74a1,1,0,0,0,.47.85l7.5,4.63h0a.47.47,0,0,0,.15.06s.05,0,.08,0a.86.86,0,0,0,.52,0s.05,0,.08,0a.47.47,0,0,0,.15-.06h0L20,17.22a1,1,0,0,0,.47-.85V7.63A1.15,1.15,0,0,0,20.47,7.37ZM11,19.21l-5.5-3.4V9.43L11,12.82Zm1-8.12L6.4,7.63,12,4.18l5.6,3.45Zm6.5,4.72L13,19.21V12.82l5.5-3.39Z"/></svg>
+                Volume
+            </p>
+            <button type="submit" class="botaoconverter" onclick="converterVolume()" data-upgraded=",MaterialButton">calcular</button>
+
+        </div>
+
+        <div class="areadaconversao">
+            <input class="conversor" type="text" id="conversorVolume" required></input>
+            <p class="igual">=</p>
+            <p class="convertido" type="text" id="convertidoVolume"></p>
+        </div>
+
+        <div class="areadeselecao">
+            <select name="unidadevolume" id="selecaoconversorvolume" class="selecaoconversor">
+                <option>Litro</option>
+                <option>Mililitro</option>
+                <option>Metro cúbico</option>
+                <option>Pé cúbico</option>
+                <option>Polegada cúbica</option>
+                <option>Onça líquida</option>
+                <option>Galão</option>
+                <option>Copo</option>
+                <option>Colher de sopa</option>
+                <option>Colher de chá</option>
+            </select>
+
+            <p class="espaco">=</p>
+
+            <select name="unidadevolume" id="selecaoconvertidovolume" class="selecaoconvertido">
+                <option>Litro</option>
+                <option>Mililitro</option>
+                <option>Metro cúbico</option>
+                <option>Pé cúbico</option>
+                <option>Polegada cúbica</option>
+                <option>Onça líquida</option>
+                <option>Galão</option>
+                <option>Copo</option>
+                <option>Colher de sopa</option>
+                <option>Colher de chá</option>
+            </select>
+        </div>
+
+        <div class="textoformula">
+            <p class="cabecalho">Fórmula:</p>
+            <div class="tabelaformula">
+                <div class="unidadestabela"> <!-- Coluna Unidade -->
+                    <p class="unidades">Litro (L)</p>
+                    <p class="unidades">Mililitro (ml)</p>
+                    <p class="unidades">Metro cúbico (m³)</p>
+                    <p class="unidades">Pé cúbico (ft³)</p>
+                    <p class="unidades">Polegada cúbica (in³)</p>
+                    <p class="unidades">Onça líquida (oz)</p>
+                    <p class="unidades">Galão (gal)</p>
+                    <p class="unidades">Copo (cp)</p>
+                    <p class="unidades">Colher de sopa (csp)</p>
+                    <p class="unidades">Colher de chá (ccf)</p>
+                </div>
+
+                <div class="valorestabela"> <!-- Coluna Valor -->
+                    <p class="valores">1000 ml</p>
+                    <p class="valores">1/1000 L</p>
+                    <p class="valores">1000 L</p>
+                    <p class="valores">1728 in³</p>
+                    <p class="valores">16.38 ml</p>
+                    <p class="valores">29. 57 ml</p>
+                    <p class="valores">3.78 L</p>
+                    <p class="valores">240 ml</p>
+                    <p class="valores">14.78 ml</p>
+                    <p class="valores">4.92 ml</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- ========== JavaScript ========== -->
+    <script src="../js/conversao.js"></script>
+
+</body>
+
+</html>

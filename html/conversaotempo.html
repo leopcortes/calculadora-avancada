@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Conversão de Tempo | LPC </title>
+    <!-- ========== CSS ========== -->  
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <div class="conversao areatempo">
+        <div class="titulo">
+            <p class="nomedaconversao">
+                <svg class="svgtempo2" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#FFFFFF" d="M15.09814,12.63379,13,11.42285V7a1,1,0,0,0-2,0v5a.99985.99985,0,0,0,.5.86621l2.59814,1.5a1.00016,1.00016,0,1,0,1-1.73242ZM12,2A10,10,0,1,0,22,12,10.01114,10.01114,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8.00917,8.00917,0,0,1,12,20Z"/></svg>
+                Tempo
+            </p>
+            <button type="submit" class="botaoconverter" onclick="converterTempo()" data-upgraded=",MaterialButton">calcular</button>
+        </div>
+
+        <div class="areadaconversao">
+            <input class="conversor" type="text" id="conversorTempo" required></input>
+            <p class="igual">=</p>
+            <p class="convertido" type="text" id="convertidoTempo"></p>
+        </div>
+
+        <div class="areadeselecao">
+            <select name="unidadetempo" id="selecaoconversortempo" class="selecaoconversor">
+                <option>Nanosegundo</option>
+                <option>Microsegundo</option>
+                <option>Milisegundo</option>
+                <option>Segundo</option>
+                <option>Minuto</option>
+                <option>Hora</option>
+                <option>Dia</option>
+                <option>Semana</option>
+                <option>Mês</option>
+                <option>Ano</option>
+            </select>
+
+            <p class="espaco">=</p>
+
+            <select name="unidadetempo" id="selecaoconvertidotempo" class="selecaoconvertido">
+                <option>Nanosegundo</option>
+                <option>Microsegundo</option>
+                <option>Milisegundo</option>
+                <option>Segundo</option>
+                <option>Minuto</option>
+                <option>Hora</option>
+                <option>Dia</option>
+                <option>Semana</option>
+                <option>Mês</option>
+                <option>Ano</option>
+            </select>
+        </div>
+
+        <div class="textoformula">
+            <p class="cabecalho">Fórmula:</p>
+            <div class="tabelaformula">
+                <div class="unidadestabela"> <!-- Coluna Unidade -->
+                    <p class="unidades">Nanosegundo (ns)</p>
+                    <p class="unidades">Microsegundo (μs)</p>
+                    <p class="unidades">Milisegundo (ms)</p>
+                    <p class="unidades">Segundo (seg)</p>
+                    <p class="unidades">Minuto (min)</p>
+                    <p class="unidades">Hora (hr)</p>
+                    <p class="unidades">Dia (dia)</p>
+                    <p class="unidades">Semana (sem)</p>
+                    <p class="unidades">Mês (mes)</p>
+                    <p class="unidades">Ano (ano)</p>
+                </div>
+
+                <div class="valorestabela"> <!-- Coluna Valor -->
+                    <p class="valores">1.000.000.000 seg</p>
+                    <p class="valores">1.000.000 seg</p>
+                    <p class="valores">1.000 seg</p>
+                    <p class="valores">1 seg</p>
+                    <p class="valores">60 seg</p>
+                    <p class="valores">60 min</p>
+                    <p class="valores">24 horas</p>
+                    <p class="valores">7 dias</p>
+                    <p class="valores">30 dias</p>
+                    <p class="valores">365 dias</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- ========== JavaScript ========== -->
+    <script src="../js/conversao.js"></script>
+
+</body>
+
+</html>

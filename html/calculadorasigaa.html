@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora SIGAA | LPC </title>
+    <!-- ========== CSS ========== -->  
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <div class="containersigaa">
+        <br>
+        <br>
+        <div>
+            <form action="#" method="POST" class="codigo-form">
+                <input type="text" class="entrada-form-codigo" id="formterminal" placeholder="Código de Horários do SIGAA" required>
+            </form>
+        </div>
+
+        <button type="submit" class="botaosigaa" onclick="calcularSigaa()" data-upgraded=",MaterialButton">calcular</button>
+
+        <div class="textodiv">
+            <p class="texto" align="justify" id="terminal">Calculadora de Horários do SIGAA - UnB
+                Insira um código de horário por vez!
+                Exemplos: <span>35M34</span>, <span>5T45</span> ou <span>24T5</span>.
+            </p>
+        </div>
+    </div>
+   
+    <!-- ========== JavaScript ========== -->
+    <script src="../js/calculadoras.js"></script>
+
+</body>
+
+</html>

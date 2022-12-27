@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Conversão de Temperatura | LPC </title>
+    <!-- ========== CSS ========== -->  
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <div class="conversao areatemperatura">
+        <div class="titulo">
+            <p class="nomedaconversao">
+                <svg class="svgtemperatura2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#FFFFFF" d="M10.5,15.28V5.5a1,1,0,0,0-2,0v9.78A2,2,0,0,0,7.5,17a2,2,0,0,0,4,0A2,2,0,0,0,10.5,15.28Zm9-12.78H19V2a1,1,0,0,0-2,0v.5h-.5a1,1,0,0,0,0,2H17V5a1,1,0,0,0,2,0V4.5h.5a1,1,0,0,0,0-2ZM14,5.5a4.5,4.5,0,0,0-9,0V13a6,6,0,0,0,3.21,9.83A7,7,0,0,0,9.49,23,6,6,0,0,0,14,13ZM12,20.11a4,4,0,0,1-6.42-2.2,4,4,0,0,1,1.1-3.76,1,1,0,0,0,.3-.71V5.5a2.5,2.5,0,0,1,5,0v7.94a1,1,0,0,0,.3.71,4,4,0,0,1-.28,6Z"/></svg>
+                Temperatura
+            </p>
+            <button type="submit" class="botaoconverter" onclick="converterTemperatura()" data-upgraded=",MaterialButton">calcular</button>
+
+        </div>
+
+        <div class="areadaconversao">
+            <input class="conversor" type="text" id="conversorTemperatura" required></input>
+            <p class="igual">=</p>
+            <p class="convertido" type="text" id="convertidoTemperatura"></p>
+        </div>
+
+        <div class="areadeselecao">
+            <select name="unidadetemperatura" id="selecaoconversortemperatura" class="selecaoconversor">
+                <option>Graus Celcius</option>
+                <option>Graus Fahrenheit</option>
+                <option>Kelvin</option>
+            </select>
+
+            <p class="espaco">=</p>
+
+            <select name="unidadetemperatura" id="selecaoconvertidotemperatura" class="selecaoconvertido">
+                <option>Graus Celcius</option>
+                <option>Graus Fahrenheit</option>
+                <option>Kelvin</option>
+            </select>
+        </div>
+
+        <div class="textoformula">
+            <p class="cabecalho">Fórmula:</p>
+            <div class="tabelaformula">
+                <div class="unidadestabela"> <!-- Coluna Unidade -->
+                    <p class="unidades">Graus Celcius (°C)</p>
+                    <p class="unidades">Graus Fahrenheit (°F)</p>
+                    <p class="unidades">Kelvin (K)</p>
+                </div>
+
+                <div class="valorestabela"> <!-- Coluna Valor -->
+                    <p class="valores">(°C * 9/5) + 32 °F || °C + 273.15 K</p>
+                    <p class="valores">(°F - 32) * 5/9 °C || (°F - 32) * 5/9 + 273.15 K</p>
+                    <p class="valores">K - 273.15 °C || (K - 273.15) * 9/5 + 32 °F</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- ========== JavaScript ========== -->
+    <script src="../js/conversao.js"></script>
+
+</body>
+
+</html>

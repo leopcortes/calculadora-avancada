@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Conversão de Pressão | LPC </title>
+    <!-- ========== CSS ========== -->  
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <div class="conversao areapressao">
+        <div class="titulo">
+            <p class="nomedaconversao">
+                <svg class="svgpressao2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#FFFFFF" d="M17,20H13V16.41l.79.8a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42l-2.5-2.5a1,1,0,0,0-.33-.21,1,1,0,0,0-.76,0,1,1,0,0,0-.33.21l-2.5,2.5a1,1,0,0,0,1.42,1.42l.79-.8V20H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2ZM7,4h4V7.59l-.79-.8A1,1,0,1,0,8.79,8.21l2.5,2.5a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l2.5-2.5a1,1,0,1,0-1.42-1.42l-.79.8V4h4a1,1,0,0,0,0-2H7A1,1,0,0,0,7,4Z"/></svg>
+                Pressão
+            </p>
+            <button type="submit" class="botaoconverter" onclick="converterPressao()" data-upgraded=",MaterialButton">calcular</button>
+
+        </div>
+
+        <div class="areadaconversao">
+            <input class="conversor" type="text" id="conversorPressao" required></input>
+            <p class="igual">=</p>
+            <p class="convertido" type="text" id="convertidoPressao"></p>
+        </div>
+
+        <div class="areadeselecao">
+            <select name="unidadepressao" id="selecaoconversorpressao" class="selecaoconversor">
+                <option>Atmosfera</option>
+                <option>Bar</option>
+                <option>Pascal</option>
+                <option>Psi</option>
+                <option>Torr</option>
+            </select>
+
+            <p class="espaco">=</p>
+
+            <select name="unidadepressao" id="selecaoconvertidopressao" class="selecaoconvertido">
+                <option>Atmosfera</option>
+                <option>Bar</option>
+                <option>Pascal</option>
+                <option>Psi</option>
+                <option>Torr</option>
+            </select>
+        </div>
+
+        <div class="textoformula">
+            <p class="cabecalho">Fórmula:</p>
+            <div class="tabelaformula">
+                <div class="unidadestabela"> <!-- Coluna Unidade -->
+                    <p class="unidades">Atmosfera (atm)</p>
+                    <p class="unidades">Bar (bar)</p>
+                    <p class="unidades">Pascal (Pa)</p>
+                    <p class="unidades">Psi (lbf/in²)</p>
+                    <p class="unidades">Torr (Torr)</p>
+                </div>
+
+                <div class="valorestabela"> <!-- Coluna Valor -->
+                    <p class="valores">1.013 bar</p>
+                    <p class="valores">100000 Pa</p>
+                    <p class="valores">1/100000 bar</p>
+                    <p class="valores">51.715 torr</p>
+                    <p class="valores">0.019 psi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- ========== JavaScript ========== -->
+    <script src="../js/conversao.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora Associação de Capacitores | LPC </title>
+    <!-- ========== CSS ========== -->  
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <div class="calcAssociacao areacapacitores">
+        <div class="associacaoserie">
+            <div class="associacaoserietopo">
+                <div class="tituloassociacao serie">Calculadora Associação de Capacitores em Série</div>
+
+                <div class="areaimagemserie">
+                    <img src="../assets/capacitoresserie.jpg" class="imagemserie">
+                </div>
+                
+                <div class="formulaassociacao">\(C_{eq} = \frac{1}{\frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3} + ... + \frac{1}{C_N}}\)</div>
+            </div>
+
+            <div class="areadaassociacao">
+                <div class="linha">
+                    <div class="nomecapacitor">
+                        <p>C1<span>0</span></p>
+                    </div>
+    
+                    <div class="inputcapacitores">
+                        <input class="inputcapacitoresserie" type="text" id="inputCapacitorSerie1" value="0"></input>
+                    </div>
+    
+                    <div class="unidadescapacitores">
+                        <select name="unidadescapacitores" id="unidadesCapacitoresSerie1" class="selecaounidadescapacitores">
+                            <option>F (Farads)</option>
+                            <option>mF (milifarads)</option>
+                            <option>µF (microfarads)</option>
+                            <option>nF (nanofarads)</option>
+                            <option>pF (picofarads)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomecapacitor">
+                        <p>C2<span>0</span></p>
+                    </div>
+    
+                    <div class="inputcapacitores">
+                        <input class="inputcapacitoresserie" type="text" id="inputCapacitorSerie2" value="0"></input>
+                    </div>
+    
+                    <div class="unidadescapacitores">
+                        <select name="unidadescapacitores" id="unidadesCapacitoresSerie2" class="selecaounidadescapacitores">
+                            <option>F (Farads)</option>
+                            <option>mF (milifarads)</option>
+                            <option>µF (microfarads)</option>
+                            <option>nF (nanofarads)</option>
+                            <option>pF (picofarads)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomecapacitor">
+                        <p>C3<span>0</span></p>
+                    </div>
+    
+                    <div class="inputcapacitores">
+                        <input class="inputcapacitoresserie" type="text" id="inputCapacitorSerie3" value="0"></input>
+                    </div>
+    
+                    <div class="unidadescapacitores">
+                        <select name="unidadescapacitores" id="unidadesCapacitoresSerie3" class="selecaounidadescapacitores">
+                            <option>F (Farads)</option>
+                            <option>mF (milifarads)</option>
+                            <option>µF (microfarads)</option>
+                            <option>nF (nanofarads)</option>
+                            <option>pF (picofarads)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomecapacitor">
+                        <p>C4<span>0</span></p>
+                    </div>
+    
+                    <div class="inputcapacitores">
+                        <input class="inputcapacitoresserie" type="text" id="inputCapacitorSerie4" value="0"></input>
+                    </div>
+    
+                    <div class="unidadescapacitores">
+                        <select name="unidadescapacitores" id="unidadesCapacitoresSerie4" class="selecaounidadescapacitores">
+                            <option>F (Farads)</option>
+                            <option>mF (milifarads)</option>
+                            <option>µF (microfarads)</option>
+                            <option>nF (nanofarads)</option>
+                            <option>pF (picofarads)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomecapacitor">
+                        <p>C5<span>0</span></p>
+                    </div>
+    
+                    <div class="inputcapacitores">
+                        <input class="inputcapacitoresserie" type="text" id="inputCapacitorSerie5" value="0"></input>
+                    </div>
+    
+                    <div class="unidadescapacitores">
+                        <select name="unidadescapacitores" id="unidadesCapacitoresSerie5" class="selecaounidadescapacitores">
+                            <option>F (Farads)</option>
+                            <option>mF (milifarads)</option>
+                            <option>µF (microfarads)</option>
+                            <option>nF (nanofarads)</option>
+                            <option>pF (picofarads)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomecapacitor">
+                        <p>C6<span>0</span></p>
+                    </div>
+    
+                    <div class="inputcapacitores">
+                        <input class="inputcapacitoresserie" type="text" id="inputCapacitorSerie6" value="0"></input>
+                    </div>
+    
+                    <div class="unidadescapacitores">
+                        <select name="unidadescapacitores" id="unidadesCapacitoresSerie6" class="selecaounidadescapacitores">
+                            <option>F (Farads)</option>
+                            <option>mF (milifarads)</option>
+                            <option>µF (microfarads)</option>
+                            <option>nF (nanofarads)</option>
+                            <option>pF (picofarads)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomecapacitor">
+                        <p>C7<span>0</span></p>
+                    </div>
+    
+                    <div class="inputcapacitores">
+                        <input class="inputcapacitoresserie" type="text" id="inputCapacitorSerie7" value="0"></input>
+                    </div>
+    
+                    <div class="unidadescapacitores">
+                        <select name="unidadescapacitores" id="unidadesCapacitoresSerie7" class="selecaounidadescapacitores">
+                            <option>F (Farads)</option>
+                            <option>mF (milifarads)</option>
+                            <option>µF (microfarads)</option>
+                            <option>nF (nanofarads)</option>
+                            <option>pF (picofarads)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomecapacitor">
+                        <p>C8<span>0</span></p>
+                    </div>
+    
+                    <div class="inputcapacitores">
+                        <input class="inputcapacitoresserie" type="text" id="inputCapacitorSerie8" value="0"></input>
+                    </div>
+    
+                    <div class="unidadescapacitores">
+                        <select name="unidadescapacitores" id="unidadesCapacitoresSerie8" class="selecaounidadescapacitores">
+                            <option>F (Farads)</option>
+                            <option>mF (milifarads)</option>
+                            <option>µF (microfarads)</option>
+                            <option>nF (nanofarads)</option>
+                            <option>pF (picofarads)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomecapacitor">
+                        <p>C9<span>0</span></p>
+                    </div>
+    
+                    <div class="inputcapacitores">
+                        <input class="inputcapacitoresserie" type="text" id="inputCapacitorSerie9" value="0"></input>
+                    </div>
+    
+                    <div class="unidadescapacitores">
+                        <select name="unidadescapacitores" id="unidadesCapacitoresSerie9" class="selecaounidadescapacitores">
+                            <option>F (Farads)</option>
+                            <option>mF (milifarads)</option>
+                            <option>µF (microfarads)</option>
+                            <option>nF (nanofarads)</option>
+                            <option>pF (picofarads)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomecapacitor">
+                        <p>C10</p>
+                    </div>
+    
+                    <div class="inputcapacitores">
+                        <input class="inputcapacitoresserie" type="text" id="inputCapacitorSerie10" value="0"></input>
+                    </div>
+    
+                    <div class="unidadescapacitores">
+                        <select name="unidadescapacitores" id="unidadescapacitores" class="selecaounidadescapacitores">
+                            <option>F (Farads)</option>
+                            <option>mF (milifarads)</option>
+                            <option>µF (microfarads)</option>
+                            <option>nF (nanofarads)</option>
+                            <option>pF (picofarads)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button type="submit" class="botaoassociar" onclick="associarCapacitoresSerie()" data-upgraded=",MaterialButton">calcular</button>
+                
+                <p class="capacitanciaequivalente" type="text" id="capacitanciaEquivalenteSerie">Capacitância Equivalente = 0 F</p>
+            </div>
+
+        </div>
+        
+        <div class="associacaoparalelo">
+            <div class="associacaoparalelotopo">
+                <div class="tituloassociacao paralelo">Calculadora Associação de Capacitores em Paralelo</div>
+                
+                <div class="areaimagemparalelo">
+                    <img src="../assets/capacitoresparalelo.jpg" class="imagemparalelo">
+                </div>
+                
+                <div class="formulaassociacao">\(C_{eq} = C_1 + C_2 + C_3 + ... + C_N\)</div>
+            </div>
+            
+            <div class="areadaassociacao">
+                <div class="linha">
+                    <div class="nomecapacitor">
+                        <p>C1<span>0</span></p>
+                    </div>
+    
+                    <div class="inputcapacitores">
+                        <input class="inputcapacitoresparalelo" type="text" id="inputCapacitorParalelo1" value="0"></input>
+                    </div>
+    
+                    <div class="unidadescapacitores">
+                        <select name="unidadescapacitores" id="unidadesCapacitoresParalelo1" class="selecaounidadescapacitores">
+                            <option>F (Farads)</option>
+                            <option>mF (milifarads)</option>
+                            <option>µF (microfarads)</option>
+                            <option>nF (nanofarads)</option>
+                            <option>pF (picofarads)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomecapacitor">
+                        <p>C2<span>0</span></p>
+                    </div>
+    
+                    <div class="inputcapacitores">
+                        <input class="inputcapacitoresparalelo" type="text" id="inputCapacitorParalelo2" value="0"></input>
+                    </div>
+    
+                    <div class="unidadescapacitores">
+                        <select name="unidadescapacitores" id="unidadesCapacitoresParalelo2" class="selecaounidadescapacitores">
+                            <option>F (Farads)</option>
+                            <option>mF (milifarads)</option>
+                            <option>µF (microfarads)</option>
+                            <option>nF (nanofarads)</option>
+                            <option>pF (picofarads)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomecapacitor">
+                        <p>C3<span>0</span></p>
+                    </div>
+    
+                    <div class="inputcapacitores">
+                        <input class="inputcapacitoresparalelo" type="text" id="inputCapacitorParalelo3" value="0"></input>
+                    </div>
+    
+                    <div class="unidadescapacitores">
+                        <select name="unidadescapacitores" id="unidadesCapacitoresParalelo3" class="selecaounidadescapacitores">
+                            <option>F (Farads)</option>
+                            <option>mF (milifarads)</option>
+                            <option>µF (microfarads)</option>
+                            <option>nF (nanofarads)</option>
+                            <option>pF (picofarads)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomecapacitor">
+                        <p>C4<span>0</span></p>
+                    </div>
+    
+                    <div class="inputcapacitores">
+                        <input class="inputcapacitoresparalelo" type="text" id="inputCapacitorParalelo4" value="0"></input>
+                    </div>
+    
+                    <div class="unidadescapacitores">
+                        <select name="unidadescapacitores" id="unidadesCapacitoresParalelo4" class="selecaounidadescapacitores">
+                            <option>F (Farads)</option>
+                            <option>mF (milifarads)</option>
+                            <option>µF (microfarads)</option>
+                            <option>nF (nanofarads)</option>
+                            <option>pF (picofarads)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomecapacitor">
+                        <p>C5<span>0</span></p>
+                    </div>
+    
+                    <div class="inputcapacitores">
+                        <input class="inputcapacitoresparalelo" type="text" id="inputCapacitorParalelo5" value="0"></input>
+                    </div>
+    
+                    <div class="unidadescapacitores">
+                        <select name="unidadescapacitores" id="unidadesCapacitoresParalelo5" class="selecaounidadescapacitores">
+                            <option>F (Farads)</option>
+                            <option>mF (milifarads)</option>
+                            <option>µF (microfarads)</option>
+                            <option>nF (nanofarads)</option>
+                            <option>pF (picofarads)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomecapacitor">
+                        <p>C6<span>0</span></p>
+                    </div>
+    
+                    <div class="inputcapacitores">
+                        <input class="inputcapacitoresparalelo" type="text" id="inputCapacitorParalelo6" value="0"></input>
+                    </div>
+    
+                    <div class="unidadescapacitores">
+                        <select name="unidadescapacitores" id="unidadesCapacitoresParalelo6" class="selecaounidadescapacitores">
+                            <option>F (Farads)</option>
+                            <option>mF (milifarads)</option>
+                            <option>µF (microfarads)</option>
+                            <option>nF (nanofarads)</option>
+                            <option>pF (picofarads)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomecapacitor">
+                        <p>C7<span>0</span></p>
+                    </div>
+    
+                    <div class="inputcapacitores">
+                        <input class="inputcapacitoresparalelo" type="text" id="inputCapacitorParalelo7" value="0"></input>
+                    </div>
+    
+                    <div class="unidadescapacitores">
+                        <select name="unidadescapacitores" id="unidadesCapacitoresParalelo7" class="selecaounidadescapacitores">
+                            <option>F (Farads)</option>
+                            <option>mF (milifarads)</option>
+                            <option>µF (microfarads)</option>
+                            <option>nF (nanofarads)</option>
+                            <option>pF (picofarads)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomecapacitor">
+                        <p>C8<span>0</span></p>
+                    </div>
+    
+                    <div class="inputcapacitores">
+                        <input class="inputcapacitoresparalelo" type="text" id="inputCapacitorParalelo8" value="0"></input>
+                    </div>
+    
+                    <div class="unidadescapacitores">
+                        <select name="unidadescapacitores" id="unidadesCapacitoresParalelo8" class="selecaounidadescapacitores">
+                            <option>F (Farads)</option>
+                            <option>mF (milifarads)</option>
+                            <option>µF (microfarads)</option>
+                            <option>nF (nanofarads)</option>
+                            <option>pF (picofarads)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomecapacitor">
+                        <p>C9<span>0</span></p>
+                    </div>
+    
+                    <div class="inputcapacitores">
+                        <input class="inputcapacitoresparalelo" type="text" id="inputCapacitorParalelo9" value="0"></input>
+                    </div>
+    
+                    <div class="unidadescapacitores">
+                        <select name="unidadescapacitores" id="unidadesCapacitoresParalelo9" class="selecaounidadescapacitores">
+                            <option>F (Farads)</option>
+                            <option>mF (milifarads)</option>
+                            <option>µF (microfarads)</option>
+                            <option>nF (nanofarads)</option>
+                            <option>pF (picofarads)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomecapacitor">
+                        <p>C10</p>
+                    </div>
+    
+                    <div class="inputcapacitores">
+                        <input class="inputcapacitoresparalelo" type="text" id="inputCapacitorParalelo10" value="0"></input>
+                    </div>
+    
+                    <div class="unidadescapacitores">
+                        <select name="unidadescapacitores" id="unidadescapacitores" class="selecaounidadescapacitores">
+                            <option>F (Farads)</option>
+                            <option>mF (milifarads)</option>
+                            <option>µF (microfarads)</option>
+                            <option>nF (nanofarads)</option>
+                            <option>pF (picofarads)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button type="submit" class="botaoassociar" onclick="associarCapacitoresParalelo()" data-upgraded=",MaterialButton">calcular</button>
+                
+                <p class="capacitanciaequivalente" type="text" id="capacitanciaEquivalenteParalelo">Capacitância Equivalente = 0 F</p>
+            </div>
+
+        </div>
+    </div>
+   
+    <!-- ========== JavaScript ========== -->
+    <script src="../js/associacao.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+
+</html>

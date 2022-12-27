@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora Associação de Resistores | LPC </title>
+    <!-- ========== CSS ========== -->  
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <div class="calcAssociacao arearesistores">
+        <div class="associacaoserie">
+            <div class="associacaoserietopo">
+                <div class="tituloassociacao serie">Calculadora Associação de Resistores em Série</div>
+
+                <div class="areaimagemserie">
+                    <img src="../assets/resistoresserie.jpg" class="imagemserie">
+                </div>
+                
+                <div class="formulaassociacao">\(R_{eq} = R_1 + R_2 + R_3 + ... + R_N\)</div>
+            </div>
+
+            <div class="areadaassociacao">
+                <div class="linha">
+                    <div class="nomeresistor">
+                        <p>R1<span>0</span></p>
+                    </div>
+    
+                    <div class="inputresistores">
+                        <input class="inputresistoresserie" type="text" id="inputResistorSerie1" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesresistores">
+                        <select name="unidadesresistores" id="unidadesResistoresSerie1" class="selecaounidadesresistores">
+                            <option>Ω (Ohms)</option>
+                            <option>KΩ (Kilohms)</option>
+                            <option>MΩ (Megohms)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeresistor">
+                        <p>R2<span>0</span></p>
+                    </div>
+    
+                    <div class="inputresistores">
+                        <input class="inputresistoresserie" type="text" id="inputResistorSerie2" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesresistores">
+                        <select name="unidadesresistores" id="unidadesResistoresSerie2" class="selecaounidadesresistores">
+                            <option>Ω (Ohms)</option>
+                            <option>KΩ (Kilohms)</option>
+                            <option>MΩ (Megohms)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeresistor">
+                        <p>R3<span>0</span></p>
+                    </div>
+    
+                    <div class="inputresistores">
+                        <input class="inputresistoresserie" type="text" id="inputResistorSerie3" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesresistores">
+                        <select name="unidadesresistores" id="unidadesResistoresSerie3" class="selecaounidadesresistores">
+                            <option>Ω (Ohms)</option>
+                            <option>KΩ (Kilohms)</option>
+                            <option>MΩ (Megohms)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeresistor">
+                        <p>R4<span>0</span></p>
+                    </div>
+    
+                    <div class="inputresistores">
+                        <input class="inputresistoresserie" type="text" id="inputResistorSerie4" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesresistores">
+                        <select name="unidadesresistores" id="unidadesResistoresSerie4" class="selecaounidadesresistores">
+                            <option>Ω (Ohms)</option>
+                            <option>KΩ (Kilohms)</option>
+                            <option>MΩ (Megohms)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeresistor">
+                        <p>R5<span>0</span></p>
+                    </div>
+    
+                    <div class="inputresistores">
+                        <input class="inputresistoresserie" type="text" id="inputResistorSerie5" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesresistores">
+                        <select name="unidadesresistores" id="unidadesResistoresSerie5" class="selecaounidadesresistores">
+                            <option>Ω (Ohms)</option>
+                            <option>KΩ (Kilohms)</option>
+                            <option>MΩ (Megohms)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeresistor">
+                        <p>R6<span>0</span></p>
+                    </div>
+    
+                    <div class="inputresistores">
+                        <input class="inputresistoresserie" type="text" id="inputResistorSerie6" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesresistores">
+                        <select name="unidadesresistores" id="unidadesResistoresSerie6" class="selecaounidadesresistores">
+                            <option>Ω (Ohms)</option>
+                            <option>KΩ (Kilohms)</option>
+                            <option>MΩ (Megohms)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeresistor">
+                        <p>R7<span>0</span></p>
+                    </div>
+    
+                    <div class="inputresistores">
+                        <input class="inputresistoresserie" type="text" id="inputResistorSerie7" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesresistores">
+                        <select name="unidadesresistores" id="unidadesResistoresSerie7" class="selecaounidadesresistores">
+                            <option>Ω (Ohms)</option>
+                            <option>KΩ (Kilohms)</option>
+                            <option>MΩ (Megohms)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeresistor">
+                        <p>R8<span>0</span></p>
+                    </div>
+    
+                    <div class="inputresistores">
+                        <input class="inputresistoresserie" type="text" id="inputResistorSerie8" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesresistores">
+                        <select name="unidadesresistores" id="unidadesResistoresSerie8" class="selecaounidadesresistores">
+                            <option>Ω (Ohms)</option>
+                            <option>KΩ (Kilohms)</option>
+                            <option>MΩ (Megohms)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeresistor">
+                        <p>R9<span>0</span></p>
+                    </div>
+    
+                    <div class="inputresistores">
+                        <input class="inputresistoresserie" type="text" id="inputResistorSerie9" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesresistores">
+                        <select name="unidadesresistores" id="unidadesResistoresSerie9" class="selecaounidadesresistores">
+                            <option>Ω (Ohms)</option>
+                            <option>KΩ (Kilohms)</option>
+                            <option>MΩ (Megohms)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeresistor">
+                        <p>R10</p>
+                    </div>
+    
+                    <div class="inputresistores">
+                        <input class="inputresistoresserie" type="text" id="inputResistorSerie10" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesresistores">
+                        <select name="unidadesresistores" id="unidadesresistores" class="selecaounidadesresistores">
+                            <option>Ω (Ohms)</option>
+                            <option>KΩ (Kilohms)</option>
+                            <option>MΩ (Megohms)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button type="submit" class="botaoassociar" onclick="associarResistoresSerie()" data-upgraded=",MaterialButton">calcular</button>
+                
+                <p class="resistenciaequivalente" type="text" id="resistenciaEquivalenteSerie">Resistência Equivalente = 0 Ω</p>
+            </div>
+
+        </div>
+        
+        <div class="associacaoparalelo">
+            <div class="associacaoparalelotopo">
+                <div class="tituloassociacao paralelo">Calculadora Associação de Resistores em Paralelo</div>
+                
+                <div class="areaimagemparalelo">
+                    <img src="../assets/resistoresparalelo.jpg" class="imagemparalelo">
+                </div>
+                
+                <div class="formulaassociacao">\(R_{eq} = \frac{1}{\frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + ... + \frac{1}{R_N}}\)</div>
+            </div>
+
+            <div class="areadaassociacao">
+                <div class="linha">
+                    <div class="nomeresistor">
+                        <p>R1<span>0</span></p>
+                    </div>
+    
+                    <div class="inputresistores">
+                        <input class="inputresistoresparalelo" type="text" id="inputResistorParalelo1" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesresistores">
+                        <select name="unidadesresistores" id="unidadesResistoresParalelo1" class="selecaounidadesresistores">
+                            <option>Ω (Ohms)</option>
+                            <option>KΩ (Kilohms)</option>
+                            <option>MΩ (Megohms)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeresistor">
+                        <p>R2<span>0</span></p>
+                    </div>
+    
+                    <div class="inputresistores">
+                        <input class="inputresistoresparalelo" type="text" id="inputResistorParalelo2" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesresistores">
+                        <select name="unidadesresistores" id="unidadesResistoresParalelo2" class="selecaounidadesresistores">
+                            <option>Ω (Ohms)</option>
+                            <option>KΩ (Kilohms)</option>
+                            <option>MΩ (Megohms)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeresistor">
+                        <p>R3<span>0</span></p>
+                    </div>
+    
+                    <div class="inputresistores">
+                        <input class="inputresistoresparalelo" type="text" id="inputResistorParalelo3" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesresistores">
+                        <select name="unidadesresistores" id="unidadesResistoresParalelo3" class="selecaounidadesresistores">
+                            <option>Ω (Ohms)</option>
+                            <option>KΩ (Kilohms)</option>
+                            <option>MΩ (Megohms)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeresistor">
+                        <p>R4<span>0</span></p>
+                    </div>
+    
+                    <div class="inputresistores">
+                        <input class="inputresistoresparalelo" type="text" id="inputResistorParalelo4" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesresistores">
+                        <select name="unidadesresistores" id="unidadesResistoresParalelo4" class="selecaounidadesresistores">
+                            <option>Ω (Ohms)</option>
+                            <option>KΩ (Kilohms)</option>
+                            <option>MΩ (Megohms)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeresistor">
+                        <p>R5<span>0</span></p>
+                    </div>
+    
+                    <div class="inputresistores">
+                        <input class="inputresistoresparalelo" type="text" id="inputResistorParalelo5" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesresistores">
+                        <select name="unidadesresistores" id="unidadesResistoresParalelo5" class="selecaounidadesresistores">
+                            <option>Ω (Ohms)</option>
+                            <option>KΩ (Kilohms)</option>
+                            <option>MΩ (Megohms)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeresistor">
+                        <p>R6<span>0</span></p>
+                    </div>
+    
+                    <div class="inputresistores">
+                        <input class="inputresistoresparalelo" type="text" id="inputResistorParalelo6" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesresistores">
+                        <select name="unidadesresistores" id="unidadesResistoresParalelo6" class="selecaounidadesresistores">
+                            <option>Ω (Ohms)</option>
+                            <option>KΩ (Kilohms)</option>
+                            <option>MΩ (Megohms)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeresistor">
+                        <p>R7<span>0</span></p>
+                    </div>
+    
+                    <div class="inputresistores">
+                        <input class="inputresistoresparalelo" type="text" id="inputResistorParalelo7" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesresistores">
+                        <select name="unidadesresistores" id="unidadesResistoresParalelo7" class="selecaounidadesresistores">
+                            <option>Ω (Ohms)</option>
+                            <option>KΩ (Kilohms)</option>
+                            <option>MΩ (Megohms)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeresistor">
+                        <p>R8<span>0</span></p>
+                    </div>
+    
+                    <div class="inputresistores">
+                        <input class="inputresistoresparalelo" type="text" id="inputResistorParalelo8" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesresistores">
+                        <select name="unidadesresistores" id="unidadesResistoresParalelo8" class="selecaounidadesresistores">
+                            <option>Ω (Ohms)</option>
+                            <option>KΩ (Kilohms)</option>
+                            <option>MΩ (Megohms)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeresistor">
+                        <p>R9<span>0</span></p>
+                    </div>
+    
+                    <div class="inputresistores">
+                        <input class="inputresistoresparalelo" type="text" id="inputResistorParalelo9" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesresistores">
+                        <select name="unidadesresistores" id="unidadesResistoresParalelo9" class="selecaounidadesresistores">
+                            <option>Ω (Ohms)</option>
+                            <option>KΩ (Kilohms)</option>
+                            <option>MΩ (Megohms)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="linha">
+                    <div class="nomeresistor">
+                        <p>R10</p>
+                    </div>
+    
+                    <div class="inputresistores">
+                        <input class="inputresistoresparalelo" type="text" id="inputResistorParalelo10" value="0"></input>
+                    </div>
+    
+                    <div class="unidadesresistores">
+                        <select name="unidadesresistores" id="unidadesresistores" class="selecaounidadesresistores">
+                            <option>Ω (Ohms)</option>
+                            <option>KΩ (Kilohms)</option>
+                            <option>MΩ (Megohms)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button type="submit" class="botaoassociar" onclick="associarResistoresParalelo()" data-upgraded=",MaterialButton">calcular</button>
+                
+                <p class="resistenciaequivalente" type="text" id="resistenciaEquivalenteParalelo">Resistência Equivalente = 0 Ω</p>
+            </div>
+
+        </div>
+    </div>
+   
+    <!-- ========== JavaScript ========== -->
+    <script src="../js/associacao.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+
+</html>

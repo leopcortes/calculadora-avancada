@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Conversão de Comprimento | LPC </title>
+    <!-- ========== CSS ========== -->  
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <div class="conversao areacomprimento">
+        <div class="titulo">
+            <p class="nomedaconversao">
+                <svg class="svgcomprimento" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#FFFFFF" d="M22.61,7.05,17,1.39a1,1,0,0,0-.71-.29,1,1,0,0,0-.7.29L1.39,15.54a1,1,0,0,0,0,1.41l5.66,5.66a1,1,0,0,0,.71.29,1,1,0,0,0,.7-.29l2.83-2.83h0l8.49-8.49h0l2.83-2.83A1,1,0,0,0,22.61,7.05ZM19.07,9.17l-.71-.71a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l.71.71L16.24,12,14.12,9.88a1,1,0,0,0-1.41,1.41l2.12,2.12-1.42,1.42-.7-.71a1,1,0,1,0-1.42,1.42l.71.7-1.41,1.42L8.46,15.54a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.41l2.12,2.12L7.76,20.49,3.51,16.24,16.24,3.51l4.25,4.25Z"/></svg>
+                Comprimento
+            </p>
+            <button type="submit" class="botaoconverter" onclick="converterComprimento()" data-upgraded=",MaterialButton">calcular</button>
+
+        </div>
+
+        <div class="areadaconversao">
+            <input class="conversor" type="text" id="conversorComprimento" required></input>
+            <p class="igual">=</p>
+            <p class="convertido" type="text" id="convertidoComprimento"></p>
+        </div>
+
+        <div class="areadeselecao">
+            <select name="unidadecomprimento" id="selecaoconversorcomprimento" class="selecaoconversor">
+                <option>Quilômetro</option>
+                <option>Metro</option>
+                <option>Centímetro</option>
+                <option>Milímetro</option>
+                <option>Micrômetro</option>
+                <option>Nanômetro</option>
+                <option>Milha</option>
+                <option>Jarda</option>
+                <option>Pé</option>
+                <option>Polegada</option>
+                <option>Milha náutica</option>
+            </select>
+
+            <p class="espaco">=</p>
+
+            <select name="unidadevelocidade" id="selecaoconvertidocomprimento" class="selecaoconvertido">
+                <option>Quilômetro</option>
+                <option>Metro</option>
+                <option>Centímetro</option>
+                <option>Milímetro</option>
+                <option>Micrômetro</option>
+                <option>Nanômetro</option>
+                <option>Milha</option>
+                <option>Jarda</option>
+                <option>Pé</option>
+                <option>Polegada</option>
+                <option>Milha náutica</option>
+            </select>
+        </div>
+
+        <div class="textoformula">
+            <p class="cabecalho">Fórmula:</p>
+            <div class="tabelaformula">
+                <div class="unidadestabela"> <!-- Coluna Unidade -->
+                    <p class="unidades">Quilômetro (Km)</p>
+                    <p class="unidades">Metro (m)</p>
+                    <p class="unidades">Centímetro (cm)</p>
+                    <p class="unidades">Milímetro (mm)</p>
+                    <p class="unidades">Micrômetro (µm)</p>
+                    <p class="unidades">Nanômetro (nm)</p>
+                    <p class="unidades">Milha (mi)</p>
+                    <p class="unidades">Jarda (yd)</p>
+                    <p class="unidades">Pé (ft)</p>
+                    <p class="unidades">Polegada (pol)</p>
+                    <p class="unidades">Milha náutica (mima)</p>
+                </div>
+
+                <div class="valorestabela"> <!-- Coluna Valor -->
+                    <p class="valores">1000 m</p>
+                    <p class="valores">100 cm</p>
+                    <p class="valores">10 mm</p>
+                    <p class="valores">1000 µm</p>
+                    <p class="valores">1000 nm</p>
+                    <p class="valores">0.001 µm</p>
+                    <p class="valores">1.609 km</p>
+                    <p class="valores">0.914 m</p>
+                    <p class="valores">30.48 cm</p>
+                    <p class="valores">2.54 cm</p>
+                    <p class="valores">1.852 km</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- ========== JavaScript ========== -->
+    <script src="../js/conversao.js"></script>
+
+</body>
+
+</html>

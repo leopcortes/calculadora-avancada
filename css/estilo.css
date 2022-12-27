@@ -1,0 +1,1312 @@
+/* ============== Geral ============== */
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body #fullheight {
+    min-height: 100% !important;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(33, 33, 33); 
+    color: white;
+}
+
+.container {
+    height: 100%;
+    padding: 100px;
+    background-color: rgb(33, 33, 33);
+}
+
+/* ============== Botoes ============== */
+
+.aplicativos {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(33, 33, 33);
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 75%;
+    color: white;
+    padding: 10px;
+    margin: 9px;
+    cursor: pointer;
+    align-self: center;
+    justify-self: center;
+    border-radius: 7px;
+    border-color: white;
+    box-shadow: 2px 2px rgb(59, 59, 59);
+    text-decoration: none;
+}
+
+svg {
+    width: 35px;
+    height: 35px;
+    padding-right: 7px;
+}
+
+.svgvolume, .svgtemperatura, .svgpressao, .svgarea, .svgiphone, .svgcientifica {
+    padding-right: 5px;
+}
+
+.iphone {
+    background-color: #FF9F0A;
+}
+
+.iphone:hover {
+    background-color: #dd890a;
+    transform: translateY(-1px);
+}
+
+.iphone:active {
+    background-color: #dd890a;
+    box-shadow: 0.5px 0.5px rgb(59, 59, 59);
+    transform: translateY(2px);
+}
+
+.sigaa {
+    background-color: #00853e;
+}
+
+.sigaa:hover {
+    background-color: #046d35;
+    transform: translateY(-1px);
+}
+
+.sigaa:active {
+    background-color: #046d35;
+    box-shadow: 0.5px 0.5px rgb(59, 59, 59);
+    transform: translateY(2px);
+}
+
+.cientifica, .sistemas {
+    background-color: #e02443;
+}
+
+.cientifica:hover, .sistemas:hover {
+    background-color: #c20e2c;
+    transform: translateY(-1px);
+}
+
+.cientifica:active, .sistemas:active {
+    background-color: #c20e2c;
+    box-shadow: 0.5px 0.5px rgb(59, 59, 59);
+    transform: translateY(2px);
+}
+
+.conversoes {
+    background-color: #606582;
+}
+
+.conversoes:hover {
+    background-color: #474a5c;
+    transform: translateY(-1px);
+}
+
+.conversoes:active {
+    background-color: #474a5c;
+    box-shadow: 0.5px 0.5px rgb(59, 59, 59);
+    transform: translateY(2px);
+}
+
+.associacao {
+    background-color: #814e13;
+}
+
+.associacao:hover {
+    background-color: #663b0b;
+    transform: translateY(-1px);
+}
+
+.associacao:active {
+    background-color: #663b0b;
+    box-shadow: 0.5px 0.5px rgb(59, 59, 59);
+    transform: translateY(2px);
+}
+
+@media(max-width: 1400px){
+    svg { 
+        width: 25px;
+        height: 25px;
+        padding-right: 5px; 
+    }
+}
+
+@media(max-width: 1300px) and (min-width: 1100px){
+    svg { 
+        width: 0;
+        height: 0;
+        padding-right: 0; 
+    }
+}
+
+@media(max-width: 1099px){
+    .botao { 
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 950px){
+    .aplicativos { 
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .container {
+        padding: 50px;
+    }
+}
+
+@media(max-width: 500px){
+    .container { 
+        padding: 20px;
+    }
+}
+
+@media(max-height: 450px){
+    .container {
+        padding: 30px;
+    }
+}
+
+@media(max-height: 360px){
+    .container {
+        padding: 10px;
+    }
+}
+
+/* ============== Calculadora iPhone ============== */
+
+.containeriphone {
+    height: 100%;
+    background-color: black;
+}
+
+.resultado {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+    height: 39%;
+    padding-top: 230px;
+    margin-right: 10px;
+}
+
+.resultado span {
+    margin-right: 23px;
+    font-size: 100px;
+    justify-self: flex-end;
+}
+
+.botoescalc {
+    width: 100%;
+    height: 60%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;   
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    align-self: center;
+    justify-self: center;
+}
+.item:active {
+    background-color: rgb(122, 121, 121);
+}
+
+.item3:active {
+    background-color: white;
+    color: #4187f6;
+}
+
+.item1:active {
+    background-color: rgb(218, 214, 214);
+}
+
+.porcentagem {
+    background-color: #A5A5A5;
+    border: none;
+    color: black;
+}
+
+.item1 {
+    background-color: #A5A5A5;
+    border: none;
+}
+
+.item3 {
+    background-color: #4187f6;
+    border: none;
+}
+
+.numeros, .virgula {
+    background-color: #343434;
+    border: none;
+}
+
+.negativo, .limpar {
+    color: black;
+}
+
+.limpar {
+    font-size: 45px;
+}
+
+.vezes {
+    padding-top: 11px;
+}
+
+.menos {
+    padding-top: 11px;
+    font-size: 60px;
+}
+
+.item0 {
+    background-color: #343434;
+    width: 195px;
+    border-radius: 135px;
+    grid-column: span 2;
+    border: none;
+}
+
+.selectedSigh {
+    background-color: white;
+    color: #4187f6;
+}
+
+.changedStyles {
+    font-size: 10px;
+}
+
+/* ============== Calculadora SIGAA ============== */
+
+.containersigaa {
+    width: 40%;
+    height: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.codigo-form{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    width: 100%;
+}   
+
+.entrada-form-codigo{
+    display: inline-block;
+    padding: 0.9rem 1.5rem;
+    background: rgb(34, 34, 34);
+    border: none;
+    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+    box-shadow: 0 0 7px rgb(7, 7, 7); 
+    border-radius: 8px;
+    width: 90%;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+    outline: none;
+}
+
+.botaosigaa {
+    display: flex;
+    align-self: right;
+    justify-self: right;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 18px 9px;
+    font-size: 16px;
+    line-height: 16px;
+    border: none;
+    border-radius: 5px; 
+    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+    box-shadow: 0 0 7px rgb(7, 7, 7);
+    transition: all 0.3s ease 0s;
+    color: white;
+    background-color: #222222;
+}
+
+.botaosigaa:hover {
+    background-color: #191919;
+    transform: translateY(-1px);
+}
+
+.botaosigaa:active {
+    background-color: #191919;
+    transform: translateY(1px);
+}
+
+.textodiv {
+    background-color: #343946;
+    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+    box-shadow: 0 0 11px rgb(7, 7, 7);
+}
+
+.texto {
+    color: white;
+    padding: 13px;
+    white-space: pre-line;
+}
+
+.texto span {
+    font-weight: bold;
+    letter-spacing: 0.8px;
+}
+
+@media(max-width: 800px){
+    .containersigaa {
+        width: 90%;
+        height: 100%;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    } 
+    
+    .entrada-form-codigo{
+        width: 91%;
+    }
+}
+
+@media(min-width: 1400px){
+    .containersigaa {
+        width: 40%;
+        height: 100%;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    } 
+    
+    .entrada-form-codigo{
+        width: 92%;
+    }
+}
+
+@media(min-width: 1600px){
+    .containersigaa {
+        width: 43%;
+        height: 100%;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    } 
+    
+    .entrada-form-codigo{
+        width: 94%;
+    }
+}
+
+/* ============== Calculadora Cientifica ============== */
+
+
+
+/* ============== Calculadora Sistemas ============== */
+
+.calculadorasistemas{
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    overflow: auto;
+    margin: auto;
+    width: 50%;
+    height: 30%;
+    padding: 15px;
+    border-radius: 7px;
+    background-color: rgb(33, 33, 33);
+    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+    box-shadow: 0 0 7px rgb(7, 7, 7);
+}
+
+.nomedacalculadora {
+    display: flex;
+    align-items: center;
+    font-size: 27px;
+    color: rgb(218, 218, 218);
+}
+
+.areadasesquacoes {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.equacao1, .equacao2, .equacao3 {
+    display: grid;
+    grid-template-columns: 21.25% 5% 21.25% 5% 21.25% 5% 21.25%;
+}
+
+.inputequacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    width: 94%;
+    padding: 5px 2px;
+    margin: 10px 0;
+    font-size: 32px;
+    border: none;
+    color: white;
+    background-color: rgb(33, 33, 33);
+    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+    box-shadow: 0 0 7px rgb(7, 7, 7);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 2px;
+}
+
+.variavelequacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    letter-spacing: 10px;
+}
+
+.arearesposta {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 10px;
+}
+
+.respostasistema {
+    font-size: 30px;
+    color: white;
+    margin-left: 0px;
+}
+
+.botaocalcular {
+    display: flex;
+    align-self: right;
+    justify-self: right;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 22px;
+    line-height: 18px;
+    border: none;
+    border-radius: 5px; 
+    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+    box-shadow: 0 0 7px rgb(7, 7, 7);
+    transition: all 0.3s ease 0s;
+    color: white;
+    background-color: rgb(47, 47, 47);
+    transition: font-size 0.2s;
+    margin-right: 5px;
+}
+
+.botaocalcular:hover {
+    background-color: rgb(37, 37, 37);
+    font-size: 23px;
+}
+
+.botaocalcular:active {
+    background-color: rgb(37, 37, 37);
+    transform: translateY(2px);
+}
+
+@media(max-width: 1900px){
+    .calculadorasistemas {
+        width: 55%;
+    }
+    .inputequacao {
+        width: 90%;
+    }
+}
+
+@media(max-width: 1350px){
+    .calculadorasistemas {
+        width: 60%;
+    }
+    .inputequacao {
+        width: 85%;
+    }
+    .variavelequacao {
+        margin-right: 10px;
+    }
+}
+
+@media(max-width: 1100px){
+    .calculadorasistemas {
+        width: 70%;
+    }
+    .inputequacao {
+        width: 80%;
+    }
+    .variavelequacao {
+        margin-right: 10px;
+    }
+}
+
+@media(max-width: 850px){
+    .calculadorasistemas {
+        width: 90%;
+    }
+    .inputequacao {
+        width: 80%;
+    }
+    .variavelequacao {
+        margin-right: 10px;
+    }
+}
+
+@media(max-width: 600px){
+    .calculadorasistemas {
+        width: 90%;
+    }
+    .inputequacao {
+        width: 70%;
+    }
+    .variavelequacao {
+        margin-right: 15px;
+    }
+}
+
+@media(max-height: 900px){
+    .calculadorasistemas {
+        height: 35%;
+    }
+}
+
+@media(max-height: 790px){
+    .calculadorasistemas {
+        height: 45%;
+    }
+}
+
+@media(max-height: 615px){
+    .calculadorasistemas {
+        height: 65%;
+    }
+}
+
+@media(max-height: 430px){
+    .calculadorasistemas {
+        height: 85%;
+    }
+}
+
+/* ============== Conversão Tempo ============== */
+
+.conversao {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    overflow: auto;
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    border-radius: 7px;
+    background-color: rgb(33, 33, 33);
+    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+    box-shadow: 0 0 7px rgb(7, 7, 7);
+    vertical-align: middle;
+}
+
+.areatempo {
+    height: 54%;
+}
+
+.tempo {
+    height: 54%;
+}
+
+.svgtempo2 {
+    height: 25px;
+    width: 25px;
+    padding-left: 3px;
+}
+
+.titulo {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 10px;
+}
+
+.nomedaconversao {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(218, 218, 218);
+} 
+
+.botaoconverter {
+    display: flex;
+    align-self: right;
+    justify-self: right;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    line-height: 16px;
+    border: none;
+    border-radius: 5px; 
+    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+    box-shadow: 0 0 7px rgb(7, 7, 7);
+    transition: all 0.3s ease 0s;
+    color: white;
+    background-color: rgb(44, 44, 44);
+    transition: font-size 0.2s;
+}
+
+.botaoconverter:hover {
+    background-color: rgb(37, 37, 37);
+    font-size: 17px;
+}
+
+.botaoconverter:active {
+    background-color: rgb(37, 37, 37);
+    transform: translateY(2px);
+}
+
+.areadaconversao {
+    display: flex;
+    flex-direction: row;
+    color: rgb(184, 184, 184);
+}
+
+.conversor, .convertido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 46%;
+    padding: 7px 0;
+    font-size: 32px;
+    border: none;
+    color: rgb(184, 184, 184);
+    background-color: rgb(33, 33, 33);
+    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+    box-shadow: 0 0 7px rgb(7, 7, 7);
+}
+
+.igual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 18px;
+    font-size: 36px;
+}
+
+.areadeselecao {
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.selecaoconversor, .selecaoconvertido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46%;
+    -webkit-box-shadow: 0 0 4px rgb(7, 7, 7);
+    box-shadow: 0 0 4px rgb(7, 7, 7);
+    background-color: rgb(44, 44, 44);
+    color: rgb(184, 184, 184);
+    border-color: rgb(0, 0, 0, 0.2);
+}
+
+.espaco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 18px;
+    font-size: 36px;
+    color: rgb(33, 33, 33)
+}
+
+
+.textoformula {
+    font-size: 15px;
+    color: rgb(218, 218, 218);
+    padding: 0;
+}
+
+.cabecalho {
+    display: inline-block;
+    justify-content: left;
+    font-size: 17px;
+    padding: 10px 0 2px 0;
+}
+
+.tabelaformula {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 14px;
+}
+
+.valorestabela {
+    text-align: right;
+}
+
+.unidades, .valores {
+    box-shadow: 0px 1px 0px 0px rgba(7, 7, 7, 0.2);
+}
+
+*:focus {
+    outline: none;
+}
+
+@media(max-width: 768px) {
+    .conversao {
+        width: 90%;
+    }
+}
+
+@media(min-width: 1600px) {
+    .conversao {
+        width: 40%;
+    }
+}
+
+@media(min-height: 850px) {
+    .areatempo {
+        height: 36%;
+    }
+}
+
+/* ============== Conversão Velocidade ============== */
+
+.svgvelocidade2 {
+    height: 25px;
+    width: 25px;
+    padding-left: 3px;
+}
+
+.areavelocidade {
+    height: 41%;
+}
+
+@media(min-height: 850px) {
+    .areavelocidade {
+        height: 27%;
+    }
+}
+
+/* ============== Conversão Massa ============== */
+
+.svgmassa2 {
+    height: 25px;
+    width: 25px;
+    padding-left: 3px;
+    padding-bottom: 2px;
+}
+
+.areamassa {
+    height: 49%;
+}
+
+@media(min-height: 850px) {
+    .areamassa {
+        height: 33%;
+    }
+}
+
+/* ============== Conversão Comprimento ============== */
+
+.svgcomprimento2 {
+    height: 25px;
+    width: 25px;
+    padding-left: 3px;
+    padding-bottom: 2px;
+}
+
+.areacomprimento {
+    height: 57%;
+}
+
+@media(min-height: 850px) {
+    .areacomprimento {
+        height: 40%;
+    }
+}
+
+/* ============== Conversão Dados ============== */
+
+.svgdados2 {
+    height: 25px;
+    width: 25px;
+    padding-left: 3px;
+}
+
+.areadados {
+    height: 67%;
+}
+
+@media(min-height: 850px) {
+    .areadados {
+        height: 45%;
+    }
+}
+
+/* ============== Conversão Temperatura ============== */
+
+.svgtemperatura2 {
+    height: 24px;
+    width: 24px;
+    padding-left: 3px;
+}
+
+.areatemperatura {
+    height: 36%;
+}
+
+@media(min-height: 850px) {
+    .areatemperatura {
+        height: 24%;
+    }
+}
+
+/* ============== Conversão Volume ============== */
+
+.svgvolume2 {
+    height: 26px;
+    width: 26px;
+    padding-left: 3px;
+}
+
+.areavolume {
+    height: 54%;
+}
+
+@media(min-height: 850px) {
+    .areavolume {
+        height: 36%;
+    }
+}
+
+/* ============== Conversão Área ============== */
+
+.svgarea2 {
+    height: 23px;
+    width: 23px;
+}
+
+.areaarea {
+    height: 46%;
+}
+
+@media(min-height: 850px) {
+    .areaarea {
+        height: 31%;
+    }
+}
+
+/* ============== Conversão Pressão ============== */
+
+.svgpressao2 {
+    height: 23px;
+    width: 23px;
+}
+
+.areapressao {
+    height: 41%;
+}
+
+@media(min-height: 850px) {
+    .areapressao {
+        height: 27%;
+    }
+}
+
+/* ============== Associação ============== */
+
+.calcAssociacao {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(33, 33, 33);
+    color: white;
+}
+
+/* ============== Associação Resistores ============== */
+
+.associacaoserie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1.5px solid rgb(45, 45, 45);
+}
+
+.associacaoserietopo, .associacaoparalelotopo {
+    height: 40%;
+}
+
+.associacaoparalelo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1.5px solid rgb(45, 45, 45);
+}
+
+.tituloassociacao {
+    font-size: 1.5rem;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.areaimagemserie, .areaimagemparalelo {
+    padding: 5px;
+    padding-left: 10px;
+    align-self: center;
+}
+
+.imagemserie, .imagemparalelo {
+    height: auto;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.imagemparalelo {
+    width: 40%;
+}
+
+.formulaassociacao {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.areadaassociacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-top: 2px solid rgb(45, 45, 45);
+    border-bottom: 2px solid rgb(45, 45, 45);
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.nomeresistor {
+    padding-right: 5px;
+    font-size: 1.5rem;
+}
+
+.nomeresistor span {
+    color: rgb(33, 33, 33);
+}
+
+.inputresistores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    padding: 1px;
+    border: none;
+    color: white;
+    background-color: rgb(33, 33, 33);
+    -webkit-box-shadow: 0 0 10px rgb(7, 7, 7);
+    box-shadow: 0 0 10px rgb(7, 7, 7);
+}
+
+.inputresistoresserie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    padding: 1px;
+    border: none;
+    color: white;
+    background-color: rgb(33, 33, 33);
+    -webkit-box-shadow: 0 0 10px rgb(7, 7, 7);
+    box-shadow: 0 0 10px rgb(7, 7, 7);
+}
+
+.inputresistoresparalelo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    padding: 1px;
+    border: none;
+    color: white;
+    background-color: rgb(33, 33, 33);
+    -webkit-box-shadow: 0 0 7px rgba(7, 7, 7, 1);
+    box-shadow: 0 0 7px rgba(7, 7, 7, 1);
+}
+
+.unidadesresistores {
+    padding-left: 10px;
+}
+
+.selecaounidadesresistores {
+    width: 165%;
+    height: 110%;
+    -webkit-box-shadow: 0 0 4px rgb(7, 7, 7);
+    box-shadow: 0 0 4px rgb(7, 7, 7);
+    background-color: rgb(44, 44, 44);
+    color: rgb(184, 184, 184);
+    border-color: rgb(0, 0, 0, 0.2);
+}
+
+.botaoassociar {
+    display: inline-block;
+    align-self: right;
+    justify-self: right;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    line-height: 16px;
+    border: none;
+    border-radius: 5px; 
+    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+    box-shadow: 0 0 7px rgb(7, 7, 7);
+    transition: all 0.3s ease 0s;
+    color: white;
+    background-color: rgb(44, 44, 44);
+    transition: font-size 0.2s;
+}
+
+.botaoassociar:hover {
+    background-color: rgb(37, 37, 37);
+    font-size: 17px;
+}
+
+.botaoassociar:active {
+    background-color: rgb(37, 37, 37);
+    transform: translateY(2px);
+}
+
+.resistenciaequivalente {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: 22px;
+}
+
+/* ============== Associação Capacitores ============== */
+
+.nomecapacitor {
+    padding-right: 5px;
+    font-size: 1.5rem;
+}
+
+.nomecapacitor span {
+    color: rgb(33, 33, 33);
+}
+
+.inputcapacitores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    padding: 1px;
+    border: none;
+    color: white;
+    background-color: rgb(33, 33, 33);
+    -webkit-box-shadow: 0 0 10px rgb(7, 7, 7);
+    box-shadow: 0 0 10px rgb(7, 7, 7);
+}
+
+.inputcapacitoresserie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    padding: 1px;
+    border: none;
+    color: white;
+    background-color: rgb(33, 33, 33);
+    -webkit-box-shadow: 0 0 10px rgb(7, 7, 7);
+    box-shadow: 0 0 10px rgb(7, 7, 7);
+}
+
+.inputcapacitoresparalelo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    padding: 1px;
+    border: none;
+    color: white;
+    background-color: rgb(33, 33, 33);
+    -webkit-box-shadow: 0 0 7px rgba(7, 7, 7, 1);
+    box-shadow: 0 0 7px rgba(7, 7, 7, 1);
+}
+
+.unidadescapacitores {
+    padding-left: 10px;
+}
+
+.selecaounidadescapacitores {
+    width: 165%;
+    height: 110%;
+    -webkit-box-shadow: 0 0 4px rgb(7, 7, 7);
+    box-shadow: 0 0 4px rgb(7, 7, 7);
+    background-color: rgb(44, 44, 44);
+    color: rgb(184, 184, 184);
+    border-color: rgb(0, 0, 0, 0.2);
+}
+
+.capacitanciaequivalente {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: 22px;
+}
+
+
+/* ============== Associação Indutores ============== */
+
+.nomeindutor {
+    padding-right: 5px;
+    font-size: 1.5rem;
+}
+
+.nomeindutor span {
+    color: rgb(33, 33, 33);
+}
+
+.inputindutores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    padding: 1px;
+    border: none;
+    color: white;
+    background-color: rgb(33, 33, 33);
+    -webkit-box-shadow: 0 0 10px rgb(7, 7, 7);
+    box-shadow: 0 0 10px rgb(7, 7, 7);
+}
+
+.inputindutoresserie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    padding: 1px;
+    border: none;
+    color: white;
+    background-color: rgb(33, 33, 33);
+    -webkit-box-shadow: 0 0 10px rgb(7, 7, 7);
+    box-shadow: 0 0 10px rgb(7, 7, 7);
+}
+
+.inputindutoresparalelo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    padding: 1px;
+    border: none;
+    color: white;
+    background-color: rgb(33, 33, 33);
+    -webkit-box-shadow: 0 0 7px rgba(7, 7, 7, 1);
+    box-shadow: 0 0 7px rgba(7, 7, 7, 1);
+}
+
+.unidadesindutores {
+    padding-left: 10px;
+}
+
+.selecaounidadesindutores {
+    width: 165%;
+    height: 110%;
+    -webkit-box-shadow: 0 0 4px rgb(7, 7, 7);
+    box-shadow: 0 0 4px rgb(7, 7, 7);
+    background-color: rgb(44, 44, 44);
+    color: rgb(184, 184, 184);
+    border-color: rgb(0, 0, 0, 0.2);
+}
+
+.indutanciaequivalente {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: 22px;
+}

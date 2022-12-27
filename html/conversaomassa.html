@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Conversão de Massa | LPC </title>
+    <!-- ========== CSS ========== -->  
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <div class="conversao areamassa">
+        <div class="titulo">
+            <p class="nomedaconversao">
+                <svg class="svgmassa2" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24"><path fill="#FFFFFF" d="M19,4H17.55A3.08,3.08,0,0,0,17,3a3,3,0,0,0-2.25-1H9.27A3,3,0,0,0,7,3a3.08,3.08,0,0,0-.57,1H5A3,3,0,0,0,2,7V19a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V7A3,3,0,0,0,19,4ZM8.52,4.34A1,1,0,0,1,9.27,4h5.46a1,1,0,0,1,.75.34,1,1,0,0,1,.25.78l-.5,4a1,1,0,0,1-1,.88H12.59l1.14-2.4a1,1,0,0,0-1.8-.86L10.37,10h-.6a1,1,0,0,1-1-.88l-.5-4A1,1,0,0,1,8.52,4.34ZM20,19a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V7A1,1,0,0,1,5,6H6.37l.42,3.37a3,3,0,0,0,3,2.63h4.46a3,3,0,0,0,3-2.63L17.63,6H19a1,1,0,0,1,1,1Zm-6-3H10a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Z"/></svg>
+                Massa
+            </p>
+            <button type="submit" class="botaoconverter" onclick="converterMassa()" data-upgraded=",MaterialButton">calcular</button>
+
+        </div>
+
+        <div class="areadaconversao">
+            <input class="conversor" type="text" id="conversorMassa" required></input>
+            <p class="igual">=</p>
+            <p class="convertido" type="text" id="convertidoMassa"></p>
+        </div>
+
+        <div class="areadeselecao">
+            <select name="unidademassa" id="selecaoconversormassa" class="selecaoconversor">
+                <option>Tonelada</option>
+                <option>Quilograma</option>
+                <option>Grama</option>
+                <option>Miligrama</option>
+                <option>Micrograma</option>
+                <option>Stone</option>
+                <option>Libra</option>
+                <option>Onça</option>
+            </select>
+
+            <p class="espaco">=</p>
+
+            <select name="unidadevelocidade" id="selecaoconvertidomassa" class="selecaoconvertido">
+                <option>Tonelada</option>
+                <option>Quilograma</option>
+                <option>Grama</option>
+                <option>Miligrama</option>
+                <option>Micrograma</option>
+                <option>Stone</option>
+                <option>Libra</option>
+                <option>Onça</option>
+            </select>
+        </div>
+
+        <div class="textoformula">
+            <p class="cabecalho">Fórmula:</p>
+            <div class="tabelaformula">
+                <div class="unidadestabela"> <!-- Coluna Unidade -->
+                    <p class="unidades">Tonelada (T)</p>
+                    <p class="unidades">Quilograma (kg)</p>
+                    <p class="unidades">Grama (g)</p>
+                    <p class="unidades">Miligrama (mg)</p>
+                    <p class="unidades">Micrograma (µg)</p>
+                    <p class="unidades">Stone (st)</p>
+                    <p class="unidades">Libra (lb)</p>
+                    <p class="unidades">Onça (oz)</p>
+                </div>
+
+                <div class="valorestabela"> <!-- Coluna Valor -->
+                    <p class="valores">1000 kg</p>
+                    <p class="valores">1000 g</p>
+                    <p class="valores">1000 mg</p>
+                    <p class="valores">1000 µg</p>
+                    <p class="valores">0.001 mg</p>
+                    <p class="valores">6.350 kg</p>
+                    <p class="valores">0.453 kg</p>
+                    <p class="valores">28.35 g</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- ========== JavaScript ========== -->
+    <script src="../js/conversao.js"></script>
+
+</body>
+
+</html>

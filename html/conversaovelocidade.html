@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Conversão de Velocidade | LPC </title>
+    <!-- ========== CSS ========== -->  
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <div class="conversao areavelocidade">
+        <div class="titulo">
+            <p class="nomedaconversao">
+                <svg class="svgvelocidade2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#FFFFFF" d="M15.29,10.29l-2.78,2.78A2.09,2.09,0,0,0,12,13a2,2,0,0,0-2,2,2.09,2.09,0,0,0,.07.51l-.78.78a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l.78-.78A2.09,2.09,0,0,0,12,17a2,2,0,0,0,2-2,2.09,2.09,0,0,0-.07-.51l2.78-2.78a1,1,0,0,0-1.42-1.42ZM12,4A10,10,0,0,0,2,14a9.91,9.91,0,0,0,1.69,5.56,1,1,0,0,0,1.66-1.12,8,8,0,1,1,13.3,0,1,1,0,0,0,.27,1.39,1,1,0,0,0,.56.17,1,1,0,0,0,.83-.44A9.91,9.91,0,0,0,22,14,10,10,0,0,0,12,4Z"/></svg>    
+                Velocidade
+            </p>
+            <button type="submit" class="botaoconverter" onclick="converterVelocidade()" data-upgraded=",MaterialButton">calcular</button>
+
+        </div>
+
+        <div class="areadaconversao">
+            <input class="conversor" type="text" id="conversorVelocidade" required></input>
+            <p class="igual">=</p>
+            <p class="convertido" type="text" id="convertidoVelocidade"></p>
+        </div>
+
+        <div class="areadeselecao">
+            <select name="unidadevelocidade" id="selecaoconversorvelocidade" class="selecaoconversor">
+                <option>Milha por hora</option>
+                <option>Pés por segundo</option>
+                <option>Metro por segundo</option>
+                <option>Quilômetro por hora</option>
+                <option>Nó</option>
+            </select>
+
+            <p class="espaco">=</p>
+
+            <select name="unidadevelocidade" id="selecaoconvertidovelocidade" class="selecaoconvertido">
+                <option>Milha por hora</option>
+                <option>Pés por segundo</option>
+                <option>Metro por segundo</option>
+                <option>Quilômetro por hora</option>
+                <option>Nó</option>
+            </select>
+        </div>
+
+        <div class="textoformula">
+            <p class="cabecalho">Fórmula:</p>
+            <div class="tabelaformula">
+                <div class="unidadestabela"> <!-- Coluna Unidade -->
+                    <p class="unidades">Milha por hora (mi/h)</p>
+                    <p class="unidades">Pés por segundo (p/s)</p>
+                    <p class="unidades">Metro por segundo (m/s)</p>
+                    <p class="unidades">Quilômetro por hora (km/h)</p>
+                    <p class="unidades">Nó</p>
+                </div>
+
+                <div class="valorestabela"> <!-- Coluna Valor -->
+                    <p class="valores">1.6 km/h</p>
+                    <p class="valores">1.09 km/h<p>
+                    <p class="valores">3.6 km/h<p>
+                    <p class="valores">0.27 m/s</p>
+                    <p class="valores">1.85 km/h</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- ========== JavaScript ========== -->
+    <script src="../js/conversao.js"></script>
+
+</body>
+
+</html>
