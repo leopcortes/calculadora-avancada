@@ -128,146 +128,130 @@ function calcularSigaa(){
 
 /* =========== Calculadora Científica =========== */
 
+function calculadoraCientifica(){
 
+}
 
 /* =========== Calculadora Sistemas =========== */
+
+function vetor() {
+    this.length = vetor.arguments.length
+    for (var i = 0; i < this.length; i++)
+    this[i+1] = vetor.arguments[i]
+}
 
 function calcularSistema(){
 
     /* ========== Associação HTML -> JS ========== */
 
-    var _eq1_X = document.getElementById("eq1_X").value
-    var _eq1_Y = document.getElementById("eq1_Y").value
-    var _eq1_Z = document.getElementById("eq1_Z").value
-    var _eq1_A = document.getElementById("eq1_A").value
-    var _eq2_X = document.getElementById("eq2_X").value
-    var _eq2_Y = document.getElementById("eq2_Y").value
-    var _eq2_Z = document.getElementById("eq2_Z").value
-    var _eq2_A = document.getElementById("eq2_A").value
-    var _eq3_X = document.getElementById("eq3_X").value
-    var _eq3_Y = document.getElementById("eq3_Y").value
-    var _eq3_Z = document.getElementById("eq3_Z").value
-    var _eq3_A = document.getElementById("eq3_A").value
-
-    var eq1_X = parseFloat(_eq1_X)
-    var eq1_Y = parseFloat(_eq1_Y)
-    var eq1_Z = parseFloat(_eq1_Z)
-    var eq1_A = parseFloat(_eq1_A)
-    var eq2_X = parseFloat(_eq2_X)
-    var eq2_Y = parseFloat(_eq2_Y)
-    var eq2_Z = parseFloat(_eq2_Z)
-    var eq2_A = parseFloat(_eq2_A)
-    var eq3_X = parseFloat(_eq3_X)
-    var eq3_Y = parseFloat(_eq3_Y)
-    var eq3_Z = parseFloat(_eq3_Z)
-    var eq3_A = parseFloat(_eq3_A)
+    var eq1_A = parseFloat(document.getElementById("eq1_A").value)
+    var eq1_B = parseFloat(document.getElementById("eq1_B").value)
+    var eq1_C = parseFloat(document.getElementById("eq1_C").value)
+    var eq1_D = parseFloat(document.getElementById("eq1_D").value)
+    var eq2_A = parseFloat(document.getElementById("eq2_A").value)
+    var eq2_B = parseFloat(document.getElementById("eq2_B").value)
+    var eq2_C = parseFloat(document.getElementById("eq2_C").value)
+    var eq2_D = parseFloat(document.getElementById("eq2_D").value)
+    var eq3_A = parseFloat(document.getElementById("eq3_A").value)
+    var eq3_B = parseFloat(document.getElementById("eq3_B").value)
+    var eq3_C = parseFloat(document.getElementById("eq3_C").value)
+    var eq3_D = parseFloat(document.getElementById("eq3_D").value)
 
     /* ========== Cálculo ========== */
     
     var linhas = 0
-    var colunas = 0
-
-    var X_final = 0
-    var Y_final = 0
-    var Z_final = 0
-    var A_final = 0
-    
-    if(eq1_X != 0 || eq1_Y != 0 || eq1_Z != 0){ linhas++ }
-    if(eq2_X != 0 || eq2_Y != 0 || eq2_Z != 0){ linhas++ }
-    if(eq3_X != 0 || eq3_Y != 0 || eq3_Z != 0){ linhas++ }
+    if(eq1_A != 0 || eq1_B != 0 || eq1_C != 0){ linhas++ }
+    if(eq2_A != 0 || eq2_B != 0 || eq2_C != 0){ linhas++ }
+    if(eq3_A != 0 || eq3_B != 0 || eq3_C != 0){ linhas++ }
 
     if(linhas == 0){ // Tudo vazio
-        colunas = 0
-
-        X_final = 0
-        Y_final = 0
-        Z_final = 0
-        A_final = 0
-    }
-    else if(linhas == 1){ // 1 linha
-        if(eq1_X != 0){ colunas++ }
-        if(eq1_Y != 0){ colunas++ }
-        if(eq1_Z != 0){ colunas++ }
-
-        if(colunas == 1){ // 1 linha e 1 coluna
-            X_final = eq1_X 
-            Y_final = eq1_Y 
-            Z_final = eq1_Z
-            A_final = eq1_A 
-        }
-        else if(colunas == 2){ // 1 linha e 2 colunas
-            X_final = eq1_X 
-            Y_final = eq1_Y 
-            Z_final = eq1_Z
-            A_final = eq1_A 
-        }
-        else if(colunas == 3){ // 1 linha e 3 colunas
-            X_final = eq1_X 
-            Y_final = eq1_Y 
-            Z_final = eq1_Z
-            A_final = eq1_A 
-        }
-    }
-    else if(linhas == 2){ // 2 linhas
-        if(eq1_X != 0 || eq2_X != 0){ colunas++ }
-        if(eq1_Y != 0 || eq2_Y != 0){ colunas++ }
-        if(eq1_Z != 0 || eq2_Z != 0){ colunas++ }
-
-        if(colunas == 1){ // 2 linhas e 1 coluna
-            X_final = eq1_X + eq2_X
-            Y_final = eq1_Y + eq2_Y
-            Z_final = eq1_Z + eq2_Z
-            A_final = eq1_A + eq2_A 
-        }
-        else if(colunas == 2){ // 2 linhas e 2 colunas
-            Y_final = ((eq2_A * eq1_X) - (eq2_X * eq1_A)) / ((eq1_X * eq2_Y) - (eq2_X * eq1_Y))
-            X_final = (eq1_A - (eq1_Y * Y_final)) / eq1_X
-            Z_final = 0
-            A_final = 0
-        }
-        else if(colunas == 3){ // 2 linhas e 3 colunas
-            X_final = "erro!"
-            Y_final = "erro!"
-            Z_final = "erro!"
-            A_final = "erro!"
-        }
-    }
-    else if(linhas == 3){
-        if(eq1_X != 0 || eq2_X != 0 || eq3_X != 0){ colunas++ }
-        if(eq1_Y != 0 || eq2_Y != 0 || eq3_Y != 0){ colunas++ }
-        if(eq1_Z != 0 || eq2_Z != 0 || eq3_Z != 0){ colunas++ }
-
-        if(colunas == 1){ // 3 linhas e 1 coluna
-            X_final = eq1_X + eq2_X + eq3_X 
-            Y_final = eq1_Y + eq2_Y + eq3_Y 
-            Z_final = eq1_Z + eq2_Z + eq3_Z 
-            A_final = eq1_A + eq2_A + eq3_A
-        }
-        else if(colunas == 2){ // 3 linhas e 2 colunas
-
-        }
-        else if(colunas == 3){ // 3 linhas e 3 colunas
-
-        }
-    }
-
-    /* ========== Impressão ========== */
-
-    console.log("linhas = " + linhas + "; colunas = " + colunas)
-    console.log("eq1_X = " + eq1_X + "; eq1_Y = " + eq1_Y + "; eq1_Z = " + eq1_Z + "; eq1_A = " + eq1_A + "\neq2_X = " + eq2_X + "; eq2_Y = " + eq2_Y + "; eq2_Z = " + eq2_Z + "; eq2_A = " + eq2_A + "\neq3_X = " + eq3_X + "; eq3_Y = " + eq3_Y + "; eq3_Z = " + eq3_Z + "; eq3_A = " + eq3_A)
-    console.log("X_final = " + X_final + "; Y_final = " + Y_final + "; Z_final = " + Z_final + "; A_final = " + A_final)
-
-    console.log("respostaSistemaX = " + respostaSistemaX + "\nrespostaSistemaY = " + respostaSistemaY + "\nrespostaSistemaZ = " + respostaSistemaZ + "\nrespostaSistemaA = " + respostaSistemaA)
-
-    if(typeof X_final == "string"){ // Quando 2 linhas e 3 colunas
-        document.getElementById("respostaSistema").innerHTML = "x = erro!" + "; y = erro!" + "; z = erro!"
+        document.getElementById("respostaSistema").innerHTML = "x = " + 0 + "; y = " + 0 + "; z = " + 0
     }
     else{
-        var respostaSistemaX = parseFloat(X_final)
-        var respostaSistemaY = parseFloat(Y_final)
-        var respostaSistemaZ = parseFloat(Z_final)
-        var respostaSistemaA = parseFloat(A_final)
+        var eq1 = new vetor(parseFloat(eq1_A, 10), parseFloat(eq1_B, 10), parseFloat(eq1_C, 10), parseFloat(eq1_D, 10))
+        var	eq2 = new vetor(parseFloat(eq2_A, 10), parseFloat(eq2_B, 10), parseFloat(eq2_C, 10), parseFloat(eq2_D, 10))
+        var eq3 = new vetor(parseFloat(eq3_A, 10), parseFloat(eq3_B, 10), parseFloat(eq3_C, 10), parseFloat(eq3_D, 10))
     
-        document.getElementById("respostaSistema").innerHTML = "x = " + respostaSistemaX + "; y = " + respostaSistemaY + "; z = " + respostaSistemaZ
+        var t1 = eq1
+        var t2 = eq2
+        var t3 = eq3
+        
+        if (eq1[1] == 0) { 
+            document.getElementById("respostaSistema").innerHTML = "x = " + eq1[4] + "; y = " + eq2[4] + "; z = " + eq3[4] + ";"
+        }
+        if (eq1[1] != 0) {
+            var temp = eq1[1]
+            for(var i=1; i<=4; i++){ 
+                eq1[i] = eq1[i] / temp 
+            }
+        }
+        
+        var temp = -eq2[1]
+        for(var i=1; i<=4; i++) {
+            eq2[i] = eq2[i] + (eq1[i] * temp) 
+        }
+
+        var temp = -eq3[1]
+        for(var i=1; i<=4; i++) {
+            eq3[i] = eq3[i] + (eq1[i] * temp) 
+        }
+        
+        if(eq2[2] == 0) {
+            for(var i=2; i<=4; i++) {
+                var temp = eq2[i]
+                eq2[i] = eq3[i]
+                eq3[i] = temp 
+            }
+        }
+        if(eq2[2] != 0 ) {
+            var temp = eq2[2]
+            eq2[2] = eq2[2] / temp
+            eq2[3] = eq2[3] / temp
+            eq2[4] = eq2[4] / temp
+        
+            var temp = -eq3[2]
+            for(var i=2; i<=4; i++) {
+                eq3[i] = eq3[i] + (eq2[i] * temp) 
+            }
+        
+            var temp = -eq1[2]
+            for(var i=2; i<=4; i++) {
+                eq1[i] = eq1[i] + (eq2[i] * temp) 
+            }
+        }
+        
+        if(eq3[3] != 0) {
+            var temp = eq3[3]
+            eq3[3] = eq3[3] / temp
+            eq3[4] = eq3[4] / temp
+        
+            var temp = -eq2[3]
+            eq2[3] = eq2[3] + (eq3[3] * temp)
+            eq2[4] = eq2[4] + (eq3[4] * temp)
+        
+            var temp = -eq1[3]
+            eq1[3] = eq1[3] + (eq3[3] * temp)
+            eq1[4] = eq1[4] + (eq3[4] * temp)
+        }
+        
+        if(t1[1] * eq1[4] + t1[2] * eq2[4] + t1[3] * eq3[4] != t1[4]){ 
+            document.getElementById("respostaSistema").innerHTML = "O sistema não tem solução ou tem solução infinita"
+        }
+        if(t2[1] * eq1[4] + t2[2] * eq2[4] + t2[3] * eq3[4] != t2[4]){ 
+            document.getElementById("respostaSistema").innerHTML = "O sistema não tem solução ou tem solução infinita"
+        }
+        if(t3[1] * eq1[4] + t3[2] * eq2[4] + t3[3] * eq3[4] != t3[4]){ 
+            document.getElementById("respostaSistema").innerHTML = "O sistema não tem solução ou tem solução infinita"
+        }
+        
+        /* ========== Impressão ========== */
+
+        document.getElementById("respostaSistema").innerHTML = " x = " + eq1[4].toFixed(2).replace(/\.?0+$/, '') + ";  y = " + eq2[4].toFixed(2).replace(/\.?0+$/, '') + ";  z = " + eq3[4].toFixed(2).replace(/\.?0+$/, '') + ";"
     }
+
+    /* ========== Impressão no console ========== */
+
+    console.log("linhas = " + linhas)
+    console.log("eq1_A = " + eq1_A + "; eq1_B = " + eq1_B + "; eq1_C = " + eq1_C + "; eq1_D = " + eq1_D + "\neq2_A = " + eq2_A + "; eq2_B = " + eq2_B + "; eq2_C = " + eq2_C + "; eq2_D = " + eq2_D + "\neq3_A = " + eq3_A + "; eq3_B = " + eq3_B + "; eq3_C = " + eq3_C + "; eq3_D = " + eq3_D)
+    console.log("X final = " + eq1[4] + "; Y final = " + eq2[4] + "; Z final = " + eq3[4])
 }
