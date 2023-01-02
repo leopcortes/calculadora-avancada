@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Hauora Sans';
+    src: url('../assets/hauora_sans/fonts/otf/Hauora-Medium.otf')
+}
+
 /* ============== Geral ============== */
 
 * {
@@ -9,7 +14,7 @@
 html, body #fullheight {
     min-height: 100% !important;
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Hauora Sans', Arial, Helvetica, sans-serif;
     background-color: rgb(33, 33, 33); 
     color: white;
 }
@@ -186,84 +191,67 @@ svg {
 
 /* ============== Calculadora iPhone ============== */
 
-.calculator {
-    background: black;
-    border-radius: 50px;
+.calculadora {
+    background: rgb(0, 0, 0);
     color: white;
-    height: 1218px;
+    height: 100%;
+    width: 1fr;
     padding: 20px;
-    position: relative;
-    width: 563px;
-  }
-  
-  .top-container {
-    display: flex;
-    height: 250px;
-    justify-content: space-between;
-    padding: 0 20px;
-  }
-  
-  .value {
-    font-size: 130px;
+    border-radius: 3%;
+}
+
+.resultado {
+    font-size: 100px;
     font-weight: 300;
-    height: 158px;
-    margin-bottom: 20px;
-    margin-right: 20px;
+    height: 100px;
+    padding-bottom: 30px;
+    margin-right: 10px;
+    margin-top: 260px;
     text-align: right;
-  }
-  
-  .buttons-container {
+}
+
+.botoes-container {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 10px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
-  }
-  
-  .button {
+}
+
+.botaoiphone {
     align-items: center;
     background: #333;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
     font-size: 45px;
-    height: 110px;
+    height: 85px;
+    width: 85px;
     justify-content: center;
     transition: filter .3s;
-    width: 110px;
-  }
-  
-  .button.function {
+}
+
+.botaoiphone.funcao {
     color: black;
     background: #a5a5a5;
-  }
-  
-  .button.operator {
+    font-size: 40px;
+}
+
+.botaoiphone.operador {
     background: #f1a33c;
-  }
-  
-  .button.number-0 {
+    font-size: 52px;
+}
+
+.botaoiphone.numero-0 {
     border-radius: 55px;
     grid-column: 1 / span 2;
     justify-content: flex-start;
-    padding-left: 43px;
-    width: 250px;
-  }
-  
-  .button:active,
-  .button:focus {
+    padding-left: 25px;
+    width: 160px;
+}
+
+.botaoiphone:active, .botaoiphone:focus {
     filter: brightness(120%);
-  }
-  
-  .bottom {
-    width: 200px;
-    height: 5px;
-    background: white;
-    border-radius: 4px;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+}
 
 /* ============== Calculadora SIGAA ============== */
 
@@ -356,16 +344,6 @@ svg {
 @media(max-width: 800px){
     .containersigaa {
         width: 90%;
-        height: 100%;
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 26px;
-        display: grid;
-        grid-template-columns: 100%;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
     } 
     
     .entrada-form-codigo{
@@ -376,16 +354,6 @@ svg {
 @media(min-width: 1400px){
     .containersigaa {
         width: 40%;
-        height: 100%;
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 26px;
-        display: grid;
-        grid-template-columns: 100%;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
     } 
     
     .entrada-form-codigo{
@@ -396,16 +364,6 @@ svg {
 @media(min-width: 1600px){
     .containersigaa {
         width: 43%;
-        height: 100%;
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 26px;
-        display: grid;
-        grid-template-columns: 100%;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
     } 
     
     .entrada-form-codigo{
@@ -425,7 +383,7 @@ svg {
     overflow: auto;
     margin: auto;
     width: 50%;
-    height: 30%;
+    height: 31%;
     padding: 15px;
     border-radius: 7px;
     background-color: rgb(33, 33, 33);
@@ -448,7 +406,8 @@ svg {
 
 .equacao1, .equacao2, .equacao3 {
     display: grid;
-    grid-template-columns: 21.25% 5% 21.25% 5% 21.25% 5% 21.25%;
+    /* grid-template-columns: 21.25% 5% 21.25% 5% 21.25% 5% 21.25%; */
+    grid-template-columns: 8.65fr 3rem 8.65fr 3rem 8.65fr 3rem 8.65fr;
 }
 
 .inputequacao {
@@ -585,25 +544,25 @@ input::-webkit-inner-spin-button {
 
 @media(max-height: 900px){
     .calculadorasistemas {
-        height: 35%;
+        height: 37%;
     }
 }
 
 @media(max-height: 790px){
     .calculadorasistemas {
-        height: 45%;
+        height: 47%;
     }
 }
 
 @media(max-height: 615px){
     .calculadorasistemas {
-        height: 65%;
+        height: 67%;
     }
 }
 
 @media(max-height: 430px){
     .calculadorasistemas {
-        height: 85%;
+        height: 87%;
     }
 }
 
