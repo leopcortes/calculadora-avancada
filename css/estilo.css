@@ -1,6 +1,8 @@
 @font-face {
     font-family: 'Hauora Sans';
-    src: url('../assets/hauora_sans/fonts/otf/Hauora-Medium.otf')
+    src: url('../assets/hauora_sans/fonts/otf/Hauora-Medium.otf');
+    font-family: 'Hauora Bold';
+    src: url('../assets/hauora_sans/fonts/otf/Hauora-SemiBold.otf')
 }
 
 /* ============== Geral ============== */
@@ -256,62 +258,62 @@ svg {
 /* ============== Calculadora SIGAA ============== */
 
 .containersigaa {
-    width: 40%;
-    height: 100%;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 26px;
-    display: grid;
-    grid-template-columns: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+   width: 40%;
+   height: 100%;
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 26px;
+   display: grid;
+   grid-template-columns: 100%;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
 }
 
 .codigo-form{
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    transition: 0.3s;
-    width: 100%;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   transition: 0.3s;
+   width: 100%;
 }   
 
 .entrada-form-codigo{
-    display: inline-block;
-    padding: 0.9rem 1.5rem;
-    background: rgb(34, 34, 34);
-    border: none;
-    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
-    box-shadow: 0 0 7px rgb(7, 7, 7); 
-    border-radius: 8px;
-    width: 90%;
-    font-family: inherit;
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: white;
-    outline: none;
+   display: inline-block;
+   padding: 0.9rem 1.5rem;
+   background: rgb(34, 34, 34);
+   border: none;
+   -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+   box-shadow: 0 0 7px rgb(7, 7, 7); 
+   border-radius: 8px;
+   width: 90%;
+   font-family: inherit;
+   font-size: 0.9rem;
+   font-weight: 500;
+   color: white;
+   outline: none;
 }
 
 .botaosigaa {
-    display: flex;
-    align-self: right;
-    justify-self: right;
-    cursor: pointer;
-    padding: 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin: 18px 9px;
-    font-size: 16px;
-    line-height: 16px;
-    border: none;
-    border-radius: 5px; 
-    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
-    box-shadow: 0 0 7px rgb(7, 7, 7);
-    transition: all 0.3s ease 0s;
-    color: white;
-    background-color: #222222;
+   display: flex;
+   align-self: right;
+   justify-self: right;
+   cursor: pointer;
+   padding: 10px;
+   text-decoration: none;
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+   margin: 18px 9px;
+   font-size: 16px;
+   line-height: 16px;
+   border: none;
+   border-radius: 5px; 
+   -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+   box-shadow: 0 0 7px rgb(7, 7, 7);
+   transition: all 0.3s ease 0s;
+   color: white;
+   background-color: #222222;
 }
 
 .botaosigaa:hover {
@@ -373,7 +375,128 @@ svg {
 
 /* ============== Calculadora Cientifica ============== */
 
+.calculadoracientifica {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    overflow: auto;
+    margin: auto;
+    width: 50%;
+    height: 53%;
+    padding: 15px;
+    border-radius: 7px;
+    background-color: rgb(33, 33, 33);
+    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+    box-shadow: 0 0 7px rgb(7, 7, 7);
+}
 
+.arearesultadocientifica {
+   display: inline-block;
+   margin-bottom: 1rem;
+   background: rgb(34, 34, 34);
+   border: none;
+   -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+   box-shadow: 0 0 7px rgb(7, 7, 7); 
+   border-radius: 8px;
+   width: 100%;
+   font-family: 'Hauora Bold';
+   font-size: 3rem;
+   font-weight: 500;
+   text-align: right;
+   color: white;
+   outline: none;
+}
+
+.resultadocientifica {
+   padding-right: 13px;
+}
+
+.containercientifica {
+   display: grid;
+   grid-gap: 10px;
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: repeat(5, 1fr);
+}
+
+.botaocientifica {
+   background-color: rgb(88, 95, 99);
+   color: white;
+   -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+   box-shadow: 0 0 7px rgb(7, 7, 7);
+   border: none;
+   height: 40px;
+   border-radius: 10px;
+   font-size: 24px;
+}
+
+.botaocientifica:hover {
+   background-color: rgb(67, 72, 75);  
+}
+
+.botaocientifica:active {
+   transform: translateY(2px);
+}
+
+.botaocientifica.numero, .botaocientifica.decimal {
+   background-color: rgb(50, 90, 112);
+}
+
+.botaocientifica.numero:hover, .botaocientifica.decimal:hover {
+   background-color: rgb(43, 77, 94);
+}
+
+.botaocientifica.igualcientifica {
+   background-color: rgb(7, 51, 120);
+}
+
+.botaocientifica.igualcientifica:hover {
+   background-color: rgb(6, 45, 109);
+}
+
+@media(max-width: 800px) {
+   .calculadoracientifica{
+        width: 70%;
+    }
+}
+
+@media(max-width: 550px) {
+   .calculadoracientifica{
+        width: 90%;
+    }
+}
+
+@media(min-height: 840px) {
+   .calculadoracientifica{
+        height: 50%;
+    }
+
+    .botaocientifica {
+        height: 60px;
+        font-size: 36px;
+    }
+}
+
+@media(min-height: 700px) {
+   .calculadoracientifica{
+        height: 44%;
+    }
+
+    .botaocientifica {
+        height: 38px;
+        font-size: 30px;
+    }
+}
+
+@media(max-height: 610px) {
+   .calculadoracientifica{
+        height: 60%;
+    }
+}
+
+@media(max-height: 520px) {
+   .calculadoracientifica{
+        height: 90%;
+    }
+}
 
 /* ============== Calculadora Sistemas ============== */
 
