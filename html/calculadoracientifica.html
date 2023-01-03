@@ -8,52 +8,58 @@
     <title> Calculadora Científica | LPC </title>
     <!-- ========== CSS ========== -->  
     <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="icon" href="../assets/iconcalculadora2.png">
 </head>
 
 <body>
-   <div class="calculadoracientifica">
-      <div class="arearesultadocientifica">
-         <p class="resultadocientifica">0</p>
-      </div>
-  
-      <div class="containercientifica">
-            <button class="botaocientifica operacao">sen</button>
-            <button class="botaocientifica operacao">ln</button>
-            <button class="botaocientifica operacao">(</button>
-            <button class="botaocientifica operacao">)</button>
-            <button class="botaocientifica operacao">%</button>
-            <button class="botaocientifica operacao">AC</button>
-            
-            <button class="botaocientifica operacao">cos</button>
-            <button class="botaocientifica operacao">log</button>
-            <button class="botaocientifica numero 7">7</button>
-            <button class="botaocientifica numero 8">8</button>
-            <button class="botaocientifica numero 9">9</button>
-            <button class="botaocientifica operacao">÷</button>
-            
-            <button class="botaocientifica operacao">tan</button>
-            <button class="botaocientifica operacao">π</button>
-            <button class="botaocientifica numero 4">4</button>
-            <button class="botaocientifica numero 5">5</button>
-            <button class="botaocientifica numero 6">6</button>
-            <button class="botaocientifica operacao">×</button>
-            
-            <button class="botaocientifica operacao">√</button>
-            <button class="botaocientifica operacao">e</button>
-            <button class="botaocientifica numero 1">1</button>
-            <button class="botaocientifica numero 2">2</button>
-            <button class="botaocientifica numero 3">3</button>
-            <button class="botaocientifica operacao">−</button>
-            
-            <button class="botaocientifica operacao">x!</button>
-            <button class="botaocientifica operacao">x^y</button>
-            <button class="botaocientifica numero 0">0</button>
-            <button class="botaocientifica decimal">.</button>
-            <button class="botaocientifica operacao igualcientifica">=</button>
-            <button class="botaocientifica operacao">+</button>
-         </div>
-    </div>
-   
+   <form class="calculadoracientifica">
+      <table class="containercientifica">
+         <tr>
+            <td colspan="6"><input class="resultadocientifica" id="display" value="0" maxlength="20"></td>
+         </tr>
+         <tr>
+            <td><input type="button" class="botaocientifica operacao" value="sin"      onclick="if(checarEntrada(this.form.display.value)) { sen(this.form) }"></td>
+            <td><input type="button" class="botaocientifica operacao" value="ln"       onclick="if(checarEntrada(this.form.display.value)) { ln(this.form) }"></td>
+            <td><input type="button" class="botaocientifica operacao" value="("        onclick="adicionarCaractere(this.form.display, '(')"></td>
+            <td><input type="button" class="botaocientifica operacao" value=")"        onclick="adicionarCaractere(this.form.display,')')"></td>
+            <td><input type="button" class="botaocientifica operacao" value="%"        onclick="percento(this.form.display)"></td>
+            <td><input type="button" class="botaocientifica operacao" value="AC"       onclick="this.form.display.value=0"></td>
+         </tr>
+         <tr>
+            <td><input type="button" class="botaocientifica operacao" value="cos"      onclick="if(checarEntrada(this.form.display.value)) { cos(this.form) }"></td>
+            <td><input type="button" class="botaocientifica operacao" value="log"      onclick="if(checarEntrada(this.form.display.value)) { log(this.form) }"></td>
+            <td><input type="button" class="botaocientifica numero"   value="7"        onclick="adicionarCaractere(this.form.display, '7')"></td>
+            <td><input type="button" class="botaocientifica numero"   value="8"        onclick="adicionarCaractere(this.form.display, '8')"></td>
+            <td><input type="button" class="botaocientifica numero"   value="9"        onclick="adicionarCaractere(this.form.display, '9')"></td>
+            <td><input type="button" class="botaocientifica operacao" value="÷"        onclick="adicionarCaractere(this.form.display, '/')"></td>
+         </tr>
+         <tr>
+            <td><input type="button" class="botaocientifica operacao" value="tan"      onclick="if(checarEntrada(this.form.display.value)) { tan(this.form) }"></td>
+            <td><input type="button" class="botaocientifica operacao" value="π"        onclick="adicionarCaractere(this.form.display,'3.14159')"></td>
+            <td><input type="button" class="botaocientifica numero"   value="4"        onclick="adicionarCaractere(this.form.display, '4')"></td>
+            <td><input type="button" class="botaocientifica numero"   value="5"        onclick="adicionarCaractere(this.form.display, '5')"></td>
+            <td><input type="button" class="botaocientifica numero"   value="6"        onclick="adicionarCaractere(this.form.display, '6')"></td>
+            <td><input type="button" class="botaocientifica operacao" value="×"        onclick="adicionarCaractere(this.form.display, '*')"></td>
+         </tr>
+         <tr>
+            <td><input type="button" class="botaocientifica operacao" value="√"        onclick="if(checarEntrada(this.form.display.value)) { sqrt(this.form) }"></td>
+            <td><input type="button" class="botaocientifica operacao" value="e"        onclick="if(checarEntrada(this.form.display.value)) { exp(this.form) }"></td>
+            <td><input type="button" class="botaocientifica numero"   value="1"        onclick="adicionarCaractere(this.form.display, '1')"></td>
+            <td><input type="button" class="botaocientifica numero"   value="2"        onclick="adicionarCaractere(this.form.display, '2')"></td>
+            <td><input type="button" class="botaocientifica numero"   value="3"        onclick="adicionarCaractere(this.form.display, '3')"></td>
+            <td><input type="button" class="botaocientifica operacao" value="-"        onclick="adicionarCaractere(this.form.display, '−')"></td>
+         </tr>
+         <tr>
+            <td><input type="button" class="botaocientifica operacao" value="x!"       onclick="if(checarEntrada(this.form.display.value)) { fatorial(this.form) }"></td>
+            <td><input type="button" class="botaocientifica operacao" value="x^y"      onclick="potencia(this.form.display)"></td>
+            <td><input type="button" class="botaocientifica numero"   value="0"        onclick="adicionarCaractere(this.form.display, '0')"></td>
+            <td><input type="button" class="botaocientifica decimal"  value="."        onclick="adicionarCaractere(this.form.display, '.')"></td>
+            <td><input type="button" class="botaocientifica igualcientifica" value="=" onclick="if(checarEntrada(this.form.display.value)) { computar(this.form) }"></td>
+            <td><input type="button" class="botaocientifica operacao" value="+"        onclick="adicionarCaractere(this.form.display, '+')"></td>
+         </tr>
+      </table>
+   </form>
+
     <!-- ========== JavaScript ========== -->
     <script src="../js/calculadoracientifica.js"></script>
 

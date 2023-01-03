@@ -376,56 +376,62 @@ svg {
 /* ============== Calculadora Cientifica ============== */
 
 .calculadoracientifica {
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
+    position: fixed;
     overflow: auto;
     margin: auto;
-    width: 50%;
-    height: 53%;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: 575px;
+    height: 320px;
     padding: 15px;
-    border-radius: 7px;
     background-color: rgb(33, 33, 33);
     -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
     box-shadow: 0 0 7px rgb(7, 7, 7);
+    border-radius: 7px;
 }
 
-.arearesultadocientifica {
-   display: inline-block;
-   margin-bottom: 1rem;
-   background: rgb(34, 34, 34);
-   border: none;
-   -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
-   box-shadow: 0 0 7px rgb(7, 7, 7); 
-   border-radius: 8px;
-   width: 100%;
-   font-family: 'Hauora Bold';
-   font-size: 3rem;
-   font-weight: 500;
-   text-align: right;
-   color: white;
-   outline: none;
-}
-
-.resultadocientifica {
-   padding-right: 13px;
+.table {
+    width: 100%;
+    height: 100%;
 }
 
 .containercientifica {
-   display: grid;
-   grid-gap: 10px;
-   grid-template-columns: repeat(6, 1fr);
-   grid-template-rows: repeat(5, 1fr);
+    border-spacing: 5px;
+}
+
+.resultadocientifica {
+    font-family: 'Hauora Bold';
+    width: 100%;
+    height: 52px;
+    outline: none;
+    text-align: right;
+    font-size: 3rem;
+    padding: 10px 0;
+    margin-bottom: 0.8rem;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: rgb(34, 34, 34);
+    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+    box-shadow: 0 0 7px rgb(7, 7, 7); 
+}
+
+.resultadocientifica,
+.resultadocientifica::placeholder {
+    font-size: 3rem;
 }
 
 .botaocientifica {
-   background-color: rgb(88, 95, 99);
-   color: white;
-   -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
-   box-shadow: 0 0 7px rgb(7, 7, 7);
-   border: none;
-   height: 40px;
-   border-radius: 10px;
-   font-size: 24px;
+    height: 40px;
+    width: 90px;
+    font-size: 26px;
+    margin: auto;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(88, 95, 99);
+    color: white;
+    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+    box-shadow: 0 0 7px rgb(7, 7, 7);
 }
 
 .botaocientifica:hover {
@@ -452,49 +458,46 @@ svg {
    background-color: rgb(6, 45, 109);
 }
 
-@media(max-width: 800px) {
+@media(max-width: 630px) {
    .calculadoracientifica{
-        width: 70%;
-    }
-}
-
-@media(max-width: 550px) {
-   .calculadoracientifica{
-        width: 90%;
-    }
-}
-
-@media(min-height: 840px) {
-   .calculadoracientifica{
-        height: 50%;
+        width: 400px;
     }
 
     .botaocientifica {
-        height: 60px;
-        font-size: 36px;
+        width: 60px;
     }
 }
 
-@media(min-height: 700px) {
+@media(max-width: 460px) {
    .calculadoracientifica{
-        height: 44%;
+        width: 350px;
     }
 
     .botaocientifica {
-        height: 38px;
-        font-size: 30px;
+        width: 50px;
     }
 }
 
-@media(max-height: 610px) {
-   .calculadoracientifica{
-        height: 60%;
+@media(max-height: 370px) {
+    .calculadoracientifica{
+        height: 250px;
+        width: 470px;
     }
-}
 
-@media(max-height: 520px) {
-   .calculadoracientifica{
-        height: 90%;
+    .containercientifica {
+        margin: 0;
+    }
+
+    .resultadocientifica{
+        font-size: 2rem;
+        height: 35px;
+        margin-bottom: 10px;
+    }
+
+    .botaocientifica {
+        height: 30px;
+        font-size: 20px;
+        width: 72px;
     }
 }
 
