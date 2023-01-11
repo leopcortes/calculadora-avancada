@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora IMC | LPC </title>
+    <!-- ========== CSS ========== -->  
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="icon" href="../assets/iconcalculadora2.png">
+</head>
+
+<body>
+   <div class="areaimc">
+      <div class="areacalculopai">
+         <div class="areacalculo">
+            <p class="nomeimc-1">Altura <span>(ex.: 1.78)</span></p>
+            <p class="nomeimc-2">Peso <span>(ex.: 72.3)</span></p>
+            <p class="nomeimc-3">Seu IMC:</p>
+
+            <input class="entradaimc-1" type="text" placeholder="Metros" id="alturaimc" required>
+            <input class="entradaimc-2" type="text" placeholder="Kilos" id="pesoimc" required>
+            <p class="imccalculado" id="imccalculado"></p>
+
+            <button class="botaoimc-1" type="submit" onclick="calcularIMC()" data-upgraded=",MaterialButton">Calcular</button>
+            <button class="botaoimc-2" type="submit" onclick="apagarIMC()" data-upgraded=",MaterialButton">Limpar</button>
+            <p class="imcclassificacao" id="imcclassificacao"></p>
+         </div>
+      </div>
+
+      <div class="areaformulapai">
+         <div class="areaformula">
+            <div class="imctabela">
+               <p class="valortabelaimc tituloimc">IMC</p>
+               <p class="valortabelaimc">Menor que 18,5</p>
+               <p class="valortabelaimc">Entre 18,5 e 24,9</p>
+               <p class="valortabelaimc">Entre 25 e 29,9</p>
+               <p class="valortabelaimc">Entre 30 e 39,9</p>
+               <p class="valortabelaimc">Maior que 40</p>
+            </div>
+
+            <div class="classificacaotabela">
+               <p class="valortabelaimc tituloimc">Classificação</p>
+               <p class="valortabelaimc">Magreza</p>
+               <p class="valortabelaimc">Normal</p>
+               <p class="valortabelaimc">Sobrepeso</p>
+               <p class="valortabelaimc">Obesidade</p>
+               <p class="valortabelaimc">Obesidade grave</p>
+            </div>
+
+            <div class="obesidadetabela">
+               <p class="valortabelaimc tituloimc">Obesidade (grau)</p>
+               <p class="valortabelaimc">0</p>
+               <p class="valortabelaimc">0</p>
+               <p class="valortabelaimc">I</p>
+               <p class="valortabelaimc">II</p>
+               <p class="valortabelaimc">III</p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+    <!-- ========== JavaScript ========== -->
+    <script src="../js/calculadoras.js"></script>
+
+</body>
+
+</html>

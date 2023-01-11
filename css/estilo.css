@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'Hauora Sans';
-    src: url('../assets/hauora_sans/fonts/otf/Hauora-Medium.otf');
-    font-family: 'Hauora Bold';
-    src: url('../assets/hauora_sans/fonts/otf/Hauora-SemiBold.otf')
+    src: url('../assets/fonts/otf/Hauora-Regular.otf');
 }
 
 /* ============== Geral ============== */
@@ -25,6 +23,7 @@ html, body #fullheight {
     height: 100%;
     padding: 100px;
     background-color: rgb(33, 33, 33);
+    font-family: 'Hauora Sans', Arial, Helvetica, sans-serif;
 }
 
 /* ============== Botoes ============== */
@@ -41,6 +40,7 @@ html, body #fullheight {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
     font-size: 30px;
     width: 75%;
     color: white;
@@ -136,6 +136,36 @@ svg {
 
 .associacao:active {
     background-color: #663b0b;
+    box-shadow: 0.5px 0.5px rgb(59, 59, 59);
+    transform: translateY(2px);
+}
+
+.coresresistores {
+    background-color: goldenrod;
+}
+
+.coresresistores:hover {
+    background-color: rgb(182, 137, 23);
+    transform: translateY(-1px);
+}
+
+.coresresistores:active {
+    background-color: rgb(182, 137, 23);
+    box-shadow: 0.5px 0.5px rgb(59, 59, 59);
+    transform: translateY(2px);
+}
+
+.imc {
+    background-color: rgb(37, 8, 204);
+}
+
+.imc:hover {
+    background-color: rgb(32, 9, 161);
+    transform: translateY(-1px);
+}
+
+.imc:active {
+    background-color: rgb(32, 9, 161);
     box-shadow: 0.5px 0.5px rgb(59, 59, 59);
     transform: translateY(2px);
 }
@@ -260,7 +290,7 @@ svg {
 .containersigaa {
    width: 40%;
    height: 100%;
-   font-family: Helvetica, Arial, sans-serif;
+   font-family: 'Hauora Sans', Helvetica, Arial, sans-serif;
    font-size: 16px;
    font-weight: 500;
    line-height: 26px;
@@ -288,7 +318,7 @@ svg {
    box-shadow: 0 0 7px rgb(7, 7, 7); 
    border-radius: 8px;
    width: 90%;
-   font-family: inherit;
+   font-family: 'Hauora Sans', Arial, Helvetica, sans-serif;
    font-size: 0.9rem;
    font-weight: 500;
    color: white;
@@ -399,7 +429,7 @@ svg {
 }
 
 .resultadocientifica {
-    font-family: 'Hauora Bold';
+    font-family: 'Hauora Sans';
     width: 100%;
     height: 52px;
     outline: none;
@@ -521,7 +551,7 @@ svg {
     display: flex;
     align-items: center;
     font-size: 27px;
-    color: rgb(218, 218, 218);
+    color: white;
 }
 
 .areadasesquacoes {
@@ -732,7 +762,7 @@ input::-webkit-inner-spin-button {
     display: flex;
     align-items: center;
     font-size: 25px;
-    color: rgb(218, 218, 218);
+    color: white;
 } 
 
 .botaoconverter {
@@ -769,7 +799,7 @@ input::-webkit-inner-spin-button {
 .areadaconversao {
     display: flex;
     flex-direction: row;
-    color: rgb(184, 184, 184);
+    color: white;
 }
 
 .conversor, .convertido{
@@ -781,7 +811,7 @@ input::-webkit-inner-spin-button {
     padding: 7px 0;
     font-size: 32px;
     border: none;
-    color: rgb(184, 184, 184);
+    color: white;
     background-color: rgb(33, 33, 33);
     -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
     box-shadow: 0 0 7px rgb(7, 7, 7);
@@ -809,7 +839,7 @@ input::-webkit-inner-spin-button {
     -webkit-box-shadow: 0 0 4px rgb(7, 7, 7);
     box-shadow: 0 0 4px rgb(7, 7, 7);
     background-color: rgb(44, 44, 44);
-    color: rgb(184, 184, 184);
+    color: white;
     border-color: rgb(0, 0, 0, 0.2);
 }
 
@@ -825,7 +855,7 @@ input::-webkit-inner-spin-button {
 
 .textoformula {
     font-size: 15px;
-    color: rgb(218, 218, 218);
+    color: white;
     padding: 0;
 }
 
@@ -1163,7 +1193,7 @@ input::-webkit-inner-spin-button {
     -webkit-box-shadow: 0 0 4px rgb(7, 7, 7);
     box-shadow: 0 0 4px rgb(7, 7, 7);
     background-color: rgb(44, 44, 44);
-    color: rgb(184, 184, 184);
+    color: white;
     border-color: rgb(0, 0, 0, 0.2);
 }
 
@@ -1274,7 +1304,7 @@ input::-webkit-inner-spin-button {
     -webkit-box-shadow: 0 0 4px rgb(7, 7, 7);
     box-shadow: 0 0 4px rgb(7, 7, 7);
     background-color: rgb(44, 44, 44);
-    color: rgb(184, 184, 184);
+    color: white;
     border-color: rgb(0, 0, 0, 0.2);
 }
 
@@ -1354,7 +1384,7 @@ input::-webkit-inner-spin-button {
     -webkit-box-shadow: 0 0 4px rgb(7, 7, 7);
     box-shadow: 0 0 4px rgb(7, 7, 7);
     background-color: rgb(44, 44, 44);
-    color: rgb(184, 184, 184);
+    color: white;
     border-color: rgb(0, 0, 0, 0.2);
 }
 
@@ -1362,4 +1392,383 @@ input::-webkit-inner-spin-button {
     padding-top: 15px;
     padding-bottom: 5px;
     font-size: 22px;
+}
+
+/* ========== Códigos de Resistores ==========  */
+
+.areacodigocores {
+    position: fixed;
+    overflow: auto;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: 900px;
+    height: 350px;
+    padding: 15px;
+    background-color: rgb(33, 33, 33);
+    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+    box-shadow: 0 0 7px rgb(7, 7, 7);
+    border-radius: 7px;
+}
+
+.areaselecaocor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+}
+
+.selecaocor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    font-size: 20px;
+    -webkit-box-shadow: 0 0 4px rgb(7, 7, 7);
+    box-shadow: 0 0 4px rgb(7, 7, 7);
+    background-color: rgb(44, 44, 44);
+    color: white;
+    border-color: rgb(0, 0, 0, 0.2);
+}
+
+.areavalorresistor {
+    margin: 15px 0;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.valorresistor {
+    display: flex;
+    align-items: center;
+    font-size: 34px;
+    margin-left: 5px;
+    font-weight: bold;
+} 
+
+.botaocalcularresistor {
+    display: flex;
+    align-self: right;
+    justify-self: right;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: none;
+    border-radius: 5px; 
+    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+    box-shadow: 0 0 7px rgb(7, 7, 7);
+    color: white;
+    background-color: rgb(44, 44, 44);
+    transition: all 0.3s ease 0s;
+    transition: font-size 0.2s;
+}
+
+
+.botaocalcularresistor:hover {
+    background-color: rgb(39, 39, 39);
+    font-size: 31px;
+}
+
+.botaocalcularresistor:active {
+    background-color: rgb(39, 39, 39);
+    transform: translateY(2px);
+}
+
+.areaimagemresistor {
+    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+    box-shadow: 0 0 7px rgb(7, 7, 7);
+    border-radius: 7px;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.resistor {
+    margin-left: 10%;
+}
+
+.resistor .resistor-stick.left {
+    border-radius: 10px 0 0 10px;
+    background-color: #464646;
+}
+
+.resistor .resistor-stick {
+    width: 9%;
+    padding-top: 2%;
+    margin-bottom: 9.5%;
+}
+
+.resistor .left-left, .resistor .right-left {
+    border-radius: 12px 0 0 12px;
+    width: 9%;
+    padding-top: 20%;
+}
+
+.resistor > * {
+    background-color: rgb(219, 188, 123);
+}
+
+.resistor>* {
+    display: inline-block;
+    margin-left: -4px;
+    background-color: rgb(219, 188, 123);
+}
+
+.resistor .band.none, .resistor .band-spacing.none {
+    background-color: rgb(219, 188, 123);
+}
+
+.resistor .band.none, .resistor .band-spacing.none {
+    background-color: rgb(219, 188, 123);
+}
+.resistor .band, .resistor .band-spacing {
+    position: relative;
+    width: 3%;
+    padding-top: 15.5%;
+    margin-bottom: 2%;
+}
+
+.tolerancia {
+    padding-top: 20%;
+}
+
+.resistor .left-band, .resistor .right-band {
+    padding-top: 20% !important;
+    margin-bottom: 0 !important;
+}
+
+.resistor .left-right, .resistor .right-right {
+    border-radius: 0 12px 12px 0;
+    width: 9%;
+    padding-top: 20%;
+}
+
+.resistor .resistor-stick.right {
+    border-radius: 0 10px 10px 0;
+    background-color: #464646;
+}
+
+@media (max-width: 950px) {
+    .areacodigocores {
+        width: 95%;
+    }
+
+    .valorresistor {
+        font-size: 28px;
+    }
+    
+    .botaocalcularresistor {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 750px) {
+    .areacodigocores {
+        height: 480px;
+        width: 92%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .areaselecaocor {
+        display: flex;
+        flex-direction: column
+    }
+
+    .selecaocor {
+        margin-bottom: 5px;
+    }
+
+    .quatro {
+        margin-bottom: 0;
+    }
+
+    .areaimagemresistor {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 660px) {
+    .areavalorresistor {
+        margin: 5px 0;
+    }
+    
+    .valorresistor {
+        font-size: 20px;
+    }
+
+    .botaocalcularresistor {
+        margin-top: 8px;
+        height: 35px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+
+/* ========== Calculadora IMC ==========  */
+
+.areaimc {
+    position: fixed;
+    overflow: auto;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: 575px;
+    height: 240px;
+    padding: 15px;
+    background-color: rgb(33, 33, 33);
+    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+    box-shadow: 0 0 7px rgb(7, 7, 7);
+    border-radius: 7px;
+}
+
+.areacalculo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.nomeimc-1, .nomeimc-2, .nomeimc-3 {
+    margin: 0 3px;
+    font-size: 20px;
+    align-self: center;
+    justify-self: center;
+}
+
+.nomeimc-1 span, .nomeimc-2 span{
+    font-size: 14px;
+}
+
+.nomeimc-3 {
+    font-weight: bold;
+}
+
+.imccalculado, .imcclassificacao {
+    font-size: 22px;
+    font-weight: bold;
+    align-self: center;
+    justify-self: center;
+}
+
+.entradaimc-1, .entradaimc-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: left;
+    justify-self: left;
+    width: 95%;
+    padding: 7px 0;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(33, 33, 33);
+    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+    box-shadow: 0 0 7px rgb(7, 7, 7);
+}
+
+.botaoimc-1, .botaoimc-2  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: left;
+    justify-self: left;
+    width: 95%;
+    padding: 7px 0;
+    margin: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px rgb(59, 59, 59);
+    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+    box-shadow: 0 0 7px rgb(7, 7, 7);
+    text-decoration: none;
+}
+
+.botaoimc-1 {
+    background-color: #194b8c;
+}
+
+.botaoimc-2 {
+    background-color: #d64705;
+}
+
+.botaoimc-1:hover {
+    background-color: #0f3566;
+    transform: translateY(-1px);
+}
+
+.botaoimc-2:hover {
+    background-color: #ad3a04;
+    transform: translateY(-1px);
+}
+
+.botaoimc-1:active {
+    background-color: #0f3566;
+    transform: translateY(1px);
+}
+
+.botaoimc-2:active {
+    background-color: #ad3a04;
+    transform: translateY(1px);
+}
+
+.areaformula {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.tituloimc {
+    font-size: 15px;
+    font-weight: bold;
+    color: #194b8c;
+}
+
+.valortabelaimc {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0px 1px 0px 0px rgba(7, 7, 7, 0.3);
+}
+
+@media (max-width: 620px) {
+    .areaimc {
+        width: 450px;
+    }
+
+    .imccalculado {
+        font-size: 22px;
+    } 
+
+    .imcclassificacao {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 500px) {
+    .areaimc {
+        width: 400px;
+    }
+    
+    .valortabelaimc {
+        font-size: 12px;
+    }
+
+    .imccalculado {
+        font-size: 22px;
+    } 
+
+    .imcclassificacao {
+        font-size: 15px;
+    }
 }

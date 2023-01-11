@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Código de Cores Resistores | LPC </title>
+    <!-- ========== CSS ========== -->  
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="icon" href="../assets/iconcalculadora2.png">
+</head>
+
+<body>
+    <div class="areacodigocores">
+      <div class="areaselecaocor">
+         <div>
+            <p>Faixa 1</p>
+            <select name="faixa1" id="selecaofaixa1" class="selecaocor">
+               <option>Selecione uma cor</option>
+               <option>Preto (0)</option>
+               <option>Marrom (1)</option>
+               <option>Vermelho (2)</option>
+               <option>Laranja (3)</option>
+               <option>Amarelo (4)</option>
+               <option>Verde (5)</option>
+               <option>Azul (6)</option>
+               <option>Roxo (7)</option>
+               <option>Cinza (8)</option>
+               <option>Branco (9)</option>
+            </select>
+         </div>
+         <div>
+            <p>Faixa 2</p>
+            <select name="faixa2" id="selecaofaixa2" class="selecaocor">
+               <option>Selecione uma cor</option>
+               <option>Preto (0)</option>
+               <option>Marrom (1)</option>
+               <option>Vermelho (2)</option>
+               <option>Laranja (3)</option>
+               <option>Amarelo (4)</option>
+               <option>Verde (5)</option>
+               <option>Azul (6)</option>
+               <option>Roxo (7)</option>
+               <option>Cinza (8)</option>
+               <option>Branco (9)</option>
+            </select>
+         </div>
+         <div>
+            <p>Faixa 3 (Multiplicador)</p>
+            <select name="multiplicador" id="selecaofaixa3" class="selecaocor">
+               <option>Selecione uma cor</option>
+               <option>Prata (0.01 Ω)</option>
+               <option>Ouro (0.1 Ω)</option>
+               <option>Preto (1 Ω)</option>
+               <option>Marrom (10 Ω)</option>
+               <option>Vermelho (100 Ω)</option>
+               <option>Laranja (1K Ω)</option>
+               <option>Amarelo (10K Ω)</option>
+               <option>Verde (100K Ω)</option>
+               <option>Azul (1M Ω)</option>
+               <option>Roxo (10M Ω)</option>
+            </select>
+         </div>
+         <div>
+            <p>Faixa 4 (Tolerância)</p>
+            <select name="tolerancia" id="selecaofaixa4" class="selecaocor quatro">
+               <option>Selecione uma cor</option>
+               <option>Prata (± 10%)</option>
+               <option>Ouro (± 5%)</option>
+               <option>Marrom (± 1%)</option>
+               <option>Vermelho (± 2%)</option>
+               <option>Verde (± 0.5%)</option>
+               <option>Azul (± 0.25%)</option>
+               <option>Roxo (± 0.1%)</option>
+            </select>
+         </div>
+      </div>
+      
+      <div class="areavalorresistor">
+         <p class="valorresistor" type="text" id="valorResistor">Valor do Resistor = 0 Ω</p>
+         <button type="submit" class="botaocalcularresistor" onclick="calcularCodigoCores()" data-upgraded=",MaterialButton">Calcular</button>
+      </div>
+      
+      <div class="areaimagemresistor">
+         <!-- <div class="resistor-container"> -->
+            <div id="resistor-icon" class="resistor">
+                <div class="resistor-stick left"></div>
+                <div class="left-left"></div>
+                <!-- ko with: numberBand1().value -->
+                <div id="band-one" class="band left-band none"></div>
+                <!-- /ko -->
+                <div class="left-right"></div>
+                <div class="band-spacing"></div>
+                <div class="band-spacing"></div>
+                <!-- ko with: numberBand2().value -->
+                <div id="band-two" class="band none"></div>
+                <!-- /ko -->
+                <div class="band-spacing"></div>
+                <div class="band-spacing"></div>
+                <div class="band-spacing"></div>
+                <div class="band-spacing"></div>
+                <!-- ko with: multiplierBand().value -->
+                <div id="band-multiplier" class="band none"></div>
+                <!-- /ko -->
+                <div class="band-spacing"></div>
+                <div class="band-spacing"></div>
+                <div class="right-left"></div>
+                <!-- ko with: toleranceBand().value -->
+                <div id="band-tolerance" class="band left-band none"></div>
+                  <!-- /ko -->
+                <div class="right-right"></div>
+                <div class="resistor-stick right"></div>
+            </div>
+            <!-- </div> -->
+      </div>
+   </div>
+   
+    <!-- ========== JavaScript ========== -->
+    <script src="../js/calculadoras.js"></script>
+</body>
+
+</html>
