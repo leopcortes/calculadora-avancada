@@ -141,31 +141,31 @@ svg {
 }
 
 .coresresistores {
-    background-color: goldenrod;
+    background-color: rgb(219, 188, 123);
 }
 
 .coresresistores:hover {
-    background-color: rgb(182, 137, 23);
+    background-color: rgb(190, 160, 93);
     transform: translateY(-1px);
 }
 
 .coresresistores:active {
-    background-color: rgb(182, 137, 23);
+    background-color: rgb(190, 160, 93);
     box-shadow: 0.5px 0.5px rgb(59, 59, 59);
     transform: translateY(2px);
 }
 
 .imc {
-    background-color: rgb(37, 8, 204);
+    background-color: #194b8c;
 }
 
 .imc:hover {
-    background-color: rgb(32, 9, 161);
+    background-color: #0f3566;
     transform: translateY(-1px);
 }
 
 .imc:active {
-    background-color: rgb(32, 9, 161);
+    background-color: #0f3566;
     box-shadow: 0.5px 0.5px rgb(59, 59, 59);
     transform: translateY(2px);
 }
@@ -739,7 +739,7 @@ input::-webkit-inner-spin-button {
 }
 
 .areatempo {
-    height: 54%;
+    height: 60%;
 }
 
 .tempo {
@@ -836,6 +836,7 @@ input::-webkit-inner-spin-button {
     justify-content: center;
     align-items: center;
     width: 46%;
+    font-size: 16px;
     -webkit-box-shadow: 0 0 4px rgb(7, 7, 7);
     box-shadow: 0 0 4px rgb(7, 7, 7);
     background-color: rgb(44, 44, 44);
@@ -898,7 +899,7 @@ input::-webkit-inner-spin-button {
 
 @media(min-height: 850px) {
     .areatempo {
-        height: 36%;
+        height: 40%;
     }
 }
 
@@ -911,12 +912,12 @@ input::-webkit-inner-spin-button {
 }
 
 .areavelocidade {
-    height: 41%;
+    height: 45%;
 }
 
 @media(min-height: 850px) {
     .areavelocidade {
-        height: 27%;
+        height: 30%;
     }
 }
 
@@ -930,12 +931,12 @@ input::-webkit-inner-spin-button {
 }
 
 .areamassa {
-    height: 49%;
+    height: 54%;
 }
 
 @media(min-height: 850px) {
     .areamassa {
-        height: 33%;
+        height: 36%;
     }
 }
 
@@ -949,12 +950,12 @@ input::-webkit-inner-spin-button {
 }
 
 .areacomprimento {
-    height: 57%;
+    height: 64%;
 }
 
 @media(min-height: 850px) {
     .areacomprimento {
-        height: 40%;
+        height: 42%;
     }
 }
 
@@ -967,12 +968,12 @@ input::-webkit-inner-spin-button {
 }
 
 .areadados {
-    height: 67%;
+    height: 76%;
 }
 
 @media(min-height: 850px) {
     .areadados {
-        height: 45%;
+        height: 51%;
     }
 }
 
@@ -985,12 +986,12 @@ input::-webkit-inner-spin-button {
 }
 
 .areatemperatura {
-    height: 36%;
+    height: 39%;
 }
 
 @media(min-height: 850px) {
     .areatemperatura {
-        height: 24%;
+        height: 26%;
     }
 }
 
@@ -1003,12 +1004,12 @@ input::-webkit-inner-spin-button {
 }
 
 .areavolume {
-    height: 54%;
+    height: 60%;
 }
 
 @media(min-height: 850px) {
     .areavolume {
-        height: 36%;
+        height: 40%;
     }
 }
 
@@ -1020,12 +1021,12 @@ input::-webkit-inner-spin-button {
 }
 
 .areaarea {
-    height: 46%;
+    height: 51%;
 }
 
 @media(min-height: 850px) {
     .areaarea {
-        height: 31%;
+        height: 34%;
     }
 }
 
@@ -1037,12 +1038,12 @@ input::-webkit-inner-spin-button {
 }
 
 .areapressao {
-    height: 41%;
+    height: 45%;
 }
 
 @media(min-height: 850px) {
     .areapressao {
-        height: 27%;
+        height: 30%;
     }
 }
 
