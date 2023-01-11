@@ -5,11 +5,13 @@
 Contém alguns tipos de calculadora, como:
 1. Calculadora básica feita em design de dispositivos móveis (mais especificamente o iPhone XR);
 2. Calculadora de códigos de horários do SIGAA (UnB);
-3. Calculadora científica (em breve..);
+3. Calculadora científica;
 4. Calculadora de sistemas de equações de 2 ou 3 incógnitas;
 5. Calculadoras de conversões de unidades de medida (Tempo, Velocidade, Massa, Comprimento, Dados, Temperatura, Volume, Área e Pressão);
-6. Calculadoras de associação de componentes elétricos (Resistores, Capacitores e Indutores).
+6. Calculadoras de associação de componentes elétricos (Resistores, Capacitores e Indutores);
+7. Calculadora de código de cores de resistores;
+8. Calculadora IMC.
 
 ----------------------------------------------------------------------
 
-![calc-avancada](https://user-images.githubusercontent.com/81263762/209731268-7702120a-815d-4064-aa65-1837e28a5c76.jpg)
+![calc-avancada2](https://user-images.githubusercontent.com/81263762/211700236-ff807c68-9385-45d0-a3a3-097ee258f946.jpg)
