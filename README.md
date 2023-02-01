@@ -1,6 +1,8 @@
 # Calculadora Avançada desenvolvida para por conhecimentos de HTML, CSS e JavaScript em prática. Projeto feito com o proposito de ser visualmente simples, intuitivo e rápido.
 
-----------------------------------------------------------------------
+<hr>
+Repositório arquivado, encontre o projeto em leopcortes.github.io
+<hr>
 
 Contém alguns tipos de calculadora, como:
 1. Calculadora básica feita em design de dispositivos móveis (mais especificamente o iPhone XR);
